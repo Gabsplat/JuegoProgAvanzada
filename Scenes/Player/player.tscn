@@ -1,34 +1,55 @@
-[gd_scene load_steps=18 format=3 uid="uid://dk6a56e3n3mbc"]
+[gd_scene load_steps=27 format=3 uid="uid://dk6a56e3n3mbc"]
 
 [ext_resource type="PackedScene" uid="uid://cupi7qpibwqb1" path="res://Scenes/Virtual/actor.tscn" id="1_xtkr7"]
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="2_5gwpl"]
-[ext_resource type="Texture2D" uid="uid://cbc0u4raftue6" path="res://Assets/Player/p1_stand.png" id="3_bkssa"]
-[ext_resource type="Texture2D" uid="uid://dug8xgnhnogbd" path="res://Assets/Player/p1_hurt.png" id="4_dxnfb"]
-[ext_resource type="Texture2D" uid="uid://crvjvnh7kvwek" path="res://Assets/Player/p1_jump.png" id="5_381ol"]
+[ext_resource type="Texture2D" uid="uid://cv4moerkih7ew" path="res://Assets/Player/p_idle/Idle Sword 01.png" id="3_yg7ua"]
+[ext_resource type="Texture2D" uid="uid://conenwmy5ffqd" path="res://Assets/Player/p_idle/Idle Sword 02.png" id="4_8ujq8"]
+[ext_resource type="Texture2D" uid="uid://d045y6mqgruqx" path="res://Assets/Player/p_jump/Jump Sword 01.png" id="5_4myi8"]
+[ext_resource type="Texture2D" uid="uid://fwr1g5mivh" path="res://Assets/Player/p_idle/Idle Sword 03.png" id="5_qh7rp"]
 [ext_resource type="Texture2D" uid="uid://c3cmck3mfudve" path="res://Assets/Player/p_run/Run Sword 01.png" id="6_3kslc"]
+[ext_resource type="Texture2D" uid="uid://dxfkdquiwud0k" path="res://Assets/Player/p_idle/Idle Sword 04.png" id="6_8qkld"]
+[ext_resource type="Texture2D" uid="uid://b13ajmrupd2tv" path="res://Assets/Player/p_jump/Jump Sword 02.png" id="6_ic80b"]
+[ext_resource type="Texture2D" uid="uid://4nixvr18gi8b" path="res://Assets/Player/p_idle/Idle Sword 05.png" id="7_8qotv"]
+[ext_resource type="Texture2D" uid="uid://dxn3r18igdhnn" path="res://Assets/Player/p_jump/Jump Sword 03.png" id="7_rki6x"]
 [ext_resource type="Texture2D" uid="uid://cu7rpaorw8lmx" path="res://Assets/Player/p_run/Run Sword 02.png" id="7_w27jg"]
+[ext_resource type="Texture2D" uid="uid://4w38nq82xi77" path="res://Assets/Player/p_fall.png" id="8_41rss"]
 [ext_resource type="Texture2D" uid="uid://bcg8qhx0uuobm" path="res://Assets/Player/p_run/Run Sword 03.png" id="8_tdbqh"]
+[ext_resource type="Texture2D" uid="uid://cghbr6t35xfcy" path="res://Assets/Player/p_hurt/Hit Sword 01.png" id="9_bon0q"]
 [ext_resource type="Texture2D" uid="uid://crytucqtb72sa" path="res://Assets/Player/p_run/Run Sword 04.png" id="9_omarb"]
 [ext_resource type="Texture2D" uid="uid://cuy3hej0m8fmh" path="res://Assets/Player/p_run/Run Sword 05.png" id="10_c5k2j"]
+[ext_resource type="Texture2D" uid="uid://byn640luw2rcm" path="res://Assets/Player/p_hurt/Hit Sword 02.png" id="10_pewxf"]
 [ext_resource type="Texture2D" uid="uid://cjghijuu1of3n" path="res://Assets/Player/p_run/Run Sword 06.png" id="11_6ej68"]
-[ext_resource type="Texture2D" uid="uid://cgcxsn1pwxfiy" path="res://Assets/Player/p1_walk/p1_walk11.png" id="12_xmdyi"]
+[ext_resource type="Texture2D" uid="uid://bip1i2w03uef7" path="res://Assets/Player/p_hurt/Hit Sword 03.png" id="11_hkiym"]
+[ext_resource type="Texture2D" uid="uid://bek0q1u02ej0p" path="res://Assets/Player/p_hurt/Hit Sword 04.png" id="12_nq0df"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jbkd8"]
-size = Vector2(38, 27)
+size = Vector2(18, 27)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dkb7f"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_bkssa")
+"texture": ExtResource("3_yg7ua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8ujq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qh7rp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8qkld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8qotv")
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_dxnfb")
+"texture": ExtResource("8_41rss")
 }],
 "loop": true,
 "name": &"fall",
@@ -36,24 +57,36 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_dxnfb")
+"texture": ExtResource("9_bon0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pewxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_hkiym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nq0df")
 }],
 "loop": true,
 "name": &"hurt",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_381ol")
+"texture": ExtResource("5_4myi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ic80b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rki6x")
 }],
 "loop": true,
 "name": &"jump",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("12_xmdyi")
-}, {
 "duration": 1.0,
 "texture": ExtResource("6_3kslc")
 }, {
@@ -74,7 +107,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 12.0
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xvbrh"]
@@ -104,12 +137,12 @@ shape = SubResource("RectangleShape2D_jbkd8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_dkb7f")
-animation = &"walk"
-frame = 2
-frame_progress = 0.581637
+animation = &"jump"
+frame_progress = 0.683075
 
 [node name="Camera2D" type="Camera2D" parent="." index="2"]
-limit_smoothed = true
+offset = Vector2(0, -50)
+zoom = Vector2(2.3, 2.3)
 drag_horizontal_enabled = true
 
 [node name="Timers" type="Node" parent="." index="3"]

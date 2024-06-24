@@ -105,3 +105,9 @@ func _on_hit_body(hitbody:Actor, hitter:Actor):
 
 func _on_player_lost_health(_new_health):
 	ui.lose_health()
+
+
+func _on_tile_map_2_changed():
+	pass # Replace with function body.
+
+
