@@ -1,7 +1,78 @@
-[gd_scene load_steps=3 format=3 uid="uid://02phwtp7a3n4"]
+[gd_scene load_steps=54 format=3 uid="uid://02phwtp7a3n4"]
 
-[ext_resource type="Texture2D" uid="uid://quwiiakxfu14" path="res://Assets/Player/p1_front.png" id="1_7b40v"]
 [ext_resource type="Script" path="res://Scenes/UI/Menus/main_menu.gd" id="1_kd03o"]
+[ext_resource type="Texture2D" uid="uid://xe1h3fisjrci" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/1.png" id="2_f73ih"]
+[ext_resource type="VideoStream" path="res://menuVideo.ogv" id="3_f42mq"]
+[ext_resource type="Texture2D" uid="uid://cbqohbtg842ba" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/2.png" id="3_v7tub"]
+[ext_resource type="Texture2D" uid="uid://cpu6435u06a34" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/3.png" id="4_pxa3b"]
+[ext_resource type="Texture2D" uid="uid://c6uu4jsbx6tpk" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/4.png" id="5_rqgf5"]
+[ext_resource type="Texture2D" uid="uid://cc1f5pf6p0j8j" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/5.png" id="6_mtkqq"]
+[ext_resource type="Texture2D" uid="uid://c5s83uvhcisge" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/6.png" id="7_62p6b"]
+[ext_resource type="Texture2D" uid="uid://dp5cre7c0xy7m" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/7.png" id="8_bny0h"]
+[ext_resource type="Texture2D" uid="uid://bcy3utwsojduw" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/8.png" id="9_7dv35"]
+[ext_resource type="Texture2D" uid="uid://cm6in1uv1580i" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/9.png" id="10_6i71i"]
+[ext_resource type="Theme" uid="uid://bkxmys60y8ksu" path="res://PirateTheme.tres" id="11_mbr4u"]
+[ext_resource type="Texture2D" uid="uid://fx5d15hj4f7m" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/1.png" id="12_ghuvh"]
+[ext_resource type="Texture2D" uid="uid://d3bf0rqrp37p0" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/2.png" id="13_klhhb"]
+[ext_resource type="Texture2D" uid="uid://cpnuuchcp2kfj" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/3.png" id="14_xlgb7"]
+[ext_resource type="Texture2D" uid="uid://lfe1m0ifujvu" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/8.png" id="15_jbru5"]
+[ext_resource type="Texture2D" uid="uid://cs7wmdylr3un" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/9.png" id="16_6eicm"]
+[ext_resource type="Texture2D" uid="uid://ddvd4psu1unnf" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/7.png" id="17_2ebof"]
+[ext_resource type="FontFile" uid="uid://cdp1w0hkk28v7" path="res://Assets/UI/Kenney Thick.ttf" id="18_vnxm0"]
+[ext_resource type="Texture2D" uid="uid://djkwdo7mlxlhg" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/9.png" id="19_gjfb0"]
+[ext_resource type="Texture2D" uid="uid://8fs51k31depl" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/11.png" id="20_astx4"]
+[ext_resource type="Texture2D" uid="uid://c8ja36aipkalh" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/12.png" id="21_yt4i3"]
+[ext_resource type="Texture2D" uid="uid://fe0rpe0wjfvy" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/13.png" id="22_gejto"]
+[ext_resource type="Texture2D" uid="uid://bnon3u5sbwreo" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/14.png" id="23_nf8jk"]
+[ext_resource type="Texture2D" uid="uid://cxcwjdwerd6f6" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/15.png" id="24_xj4fg"]
+[ext_resource type="Texture2D" uid="uid://3i36y53bxbwm" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/16.png" id="25_ss7px"]
+[ext_resource type="Texture2D" uid="uid://dkogi762bbhh7" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/10.png" id="26_8m4nb"]
+[ext_resource type="Texture2D" uid="uid://lbgg7o5e7rkf" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/8.png" id="27_m70kt"]
+[ext_resource type="Texture2D" uid="uid://cmw6xau027ubi" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/1.png" id="28_k1y4y"]
+[ext_resource type="Texture2D" uid="uid://0g4r3hshc2sj" path="res://NewResources/Wood and Paper UI/Sprites/Small Text/Small Icons/8.png" id="29_ai8x0"]
+[ext_resource type="Texture2D" uid="uid://bqbrmgbo2pkqp" path="res://NewResources/Wood and Paper UI/Sprites/Small Text/Small Icons/12.png" id="30_3huhr"]
+[ext_resource type="Texture2D" uid="uid://cwdiyt0ke17c6" path="res://NewResources/Wood and Paper UI/Sprites/Small Banner/9.png" id="31_uknbb"]
+[ext_resource type="Texture2D" uid="uid://c7put1saaomdr" path="res://NewResources/Wood and Paper UI/Sprites/Small Banner/4.png" id="32_imyev"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8rlao"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lrjfh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u8d88"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c1qbu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eq40n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ce1q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_06gfr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5u8ip"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k84i7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07tv1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r8f70"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ts6dl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uviw1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ogv7s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_42y5u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1di7d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_djypc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1yfaf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4co8p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cqx4a"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -11,6 +82,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kd03o")
+metadata/_edit_horizontal_guides_ = [-26.0]
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -20,40 +92,281 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="Panel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 54.0
-offset_top = 88.0
-offset_right = -614.0
-offset_bottom = -88.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_7b40v")
-stretch_mode = 5
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Panel"]
+modulate = Color(0.637843, 0.637843, 0.637843, 1)
+layout_mode = 0
+offset_right = 2306.0
+offset_bottom = 1298.0
+scale = Vector2(0.5, 0.5)
+stream = ExtResource("3_f42mq")
+autoplay = true
+expand = true
+loop = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 658.0
-offset_top = 80.0
-offset_right = -130.0
-offset_bottom = -80.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+visible = false
+layout_mode = 2
+offset_left = 760.0
+offset_top = 108.0
+offset_right = 1157.0
+offset_bottom = 164.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("11_mbr4u")
 alignment = 1
 
-[node name="Play" type="Button" parent="Panel/VBoxContainer"]
+[node name="Credits2" type="Button" parent="Panel/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "Play"
+text = "Seleccionar nivel
+"
 
-[node name="LevelSelect" type="Button" parent="Panel/VBoxContainer"]
+[node name="LevelSelect" type="Button" parent="Panel/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "Level Select"
+text = "Opciones"
 
-[connection signal="pressed" from="Panel/VBoxContainer/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Panel/VBoxContainer/LevelSelect" to="." method="_on_level_select_pressed"]
+[node name="Play" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+text = "Jugar"
+
+[node name="Credits" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+text = "Créditos
+"
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(389, 161)
+scale = Vector2(5, 5)
+texture = ExtResource("2_f73ih")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(549, 161)
+scale = Vector2(5, 5)
+texture = ExtResource("3_v7tub")
+
+[node name="3" type="Sprite2D" parent="."]
+position = Vector2(709, 161)
+scale = Vector2(5, 5)
+texture = ExtResource("4_pxa3b")
+
+[node name="4" type="Sprite2D" parent="."]
+position = Vector2(389, 321)
+scale = Vector2(5, 5)
+texture = ExtResource("5_rqgf5")
+
+[node name="5" type="Sprite2D" parent="."]
+position = Vector2(549, 321)
+scale = Vector2(5, 5)
+texture = ExtResource("6_mtkqq")
+
+[node name="6" type="Sprite2D" parent="."]
+position = Vector2(709, 321)
+scale = Vector2(5, 5)
+texture = ExtResource("7_62p6b")
+
+[node name="7" type="Sprite2D" parent="."]
+position = Vector2(389, 481)
+scale = Vector2(5, 5)
+texture = ExtResource("8_bny0h")
+
+[node name="8" type="Sprite2D" parent="."]
+position = Vector2(549, 481)
+scale = Vector2(5, 5)
+texture = ExtResource("9_7dv35")
+
+[node name="9" type="Sprite2D" parent="."]
+position = Vector2(709, 481)
+scale = Vector2(5, 5)
+texture = ExtResource("10_6i71i")
+
+[node name="10" type="Sprite2D" parent="."]
+position = Vector2(390, 167)
+scale = Vector2(5, 5)
+texture = ExtResource("12_ghuvh")
+
+[node name="11" type="Sprite2D" parent="."]
+position = Vector2(548, 167)
+scale = Vector2(5, 5)
+texture = ExtResource("13_klhhb")
+
+[node name="12" type="Sprite2D" parent="."]
+position = Vector2(705, 167)
+scale = Vector2(5, 5)
+texture = ExtResource("14_xlgb7")
+
+[node name="17" type="Sprite2D" parent="."]
+position = Vector2(546, 326)
+scale = Vector2(5, 5)
+texture = ExtResource("15_jbru5")
+
+[node name="13" type="Sprite2D" parent="."]
+position = Vector2(705, 326)
+scale = Vector2(5, 5)
+texture = ExtResource("16_6eicm")
+
+[node name="14" type="Sprite2D" parent="."]
+position = Vector2(390, 326)
+scale = Vector2(5, 5)
+texture = ExtResource("17_2ebof")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 225.0
+offset_right = 630.0
+offset_bottom = 270.0
+theme = ExtResource("11_mbr4u")
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_fonts/font = ExtResource("18_vnxm0")
+theme_override_font_sizes/font_size = 40
+text = "MENU"
+
+[node name="19" type="Sprite2D" parent="."]
+position = Vector2(549, 368)
+scale = Vector2(3, 3)
+texture = ExtResource("19_gjfb0")
+
+[node name="15" type="Sprite2D" parent="."]
+position = Vector2(507, 409)
+scale = Vector2(3, 3)
+texture = ExtResource("20_astx4")
+
+[node name="16" type="Sprite2D" parent="."]
+position = Vector2(549, 410)
+scale = Vector2(3, 3)
+texture = ExtResource("21_yt4i3")
+
+[node name="18" type="Sprite2D" parent="."]
+position = Vector2(590, 409)
+scale = Vector2(3, 3)
+texture = ExtResource("22_gejto")
+
+[node name="20" type="Sprite2D" parent="."]
+position = Vector2(507, 450)
+scale = Vector2(3, 3)
+texture = ExtResource("23_nf8jk")
+
+[node name="21" type="Sprite2D" parent="."]
+position = Vector2(548, 450)
+scale = Vector2(3, 3)
+texture = ExtResource("24_xj4fg")
+
+[node name="22" type="Sprite2D" parent="."]
+position = Vector2(590, 450)
+scale = Vector2(3, 3)
+texture = ExtResource("25_ss7px")
+
+[node name="23" type="Sprite2D" parent="."]
+position = Vector2(590, 368)
+scale = Vector2(3, 3)
+texture = ExtResource("26_8m4nb")
+
+[node name="24" type="Sprite2D" parent="."]
+position = Vector2(507, 368)
+scale = Vector2(3, 3)
+texture = ExtResource("27_m70kt")
+
+[node name="29" type="Sprite2D" parent="."]
+position = Vector2(426, 376)
+scale = Vector2(4, 4)
+texture = ExtResource("28_k1y4y")
+
+[node name="30" type="Sprite2D" parent="."]
+position = Vector2(427, 443)
+scale = Vector2(4, 4)
+texture = ExtResource("28_k1y4y")
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 502.0
+offset_top = 394.0
+offset_right = 597.0
+offset_bottom = 417.0
+focus_neighbor_left = NodePath("../OptionsButton")
+focus_neighbor_right = NodePath("../QuitButton")
+theme = ExtResource("11_mbr4u")
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8rlao")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_lrjfh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_u8d88")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_c1qbu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eq40n")
+text = "JUGAR	"
+
+[node name="LevelSelectorButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 408.0
+offset_top = 358.0
+offset_right = 444.0
+offset_bottom = 385.0
+focus_neighbor_top = NodePath("../OptionsButton")
+focus_neighbor_bottom = NodePath("../QuitButton")
+theme = ExtResource("11_mbr4u")
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5ce1q")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_06gfr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5u8ip")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_k84i7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_07tv1")
+text = "
+"
+icon = ExtResource("29_ai8x0")
+icon_alignment = 1
+expand_icon = true
+
+[node name="OptionsButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 411.0
+offset_top = 427.0
+offset_right = 419.0
+offset_bottom = 433.0
+scale = Vector2(4, 4)
+focus_neighbor_left = NodePath("../QuitButton")
+focus_neighbor_top = NodePath("../LevelSelectorButton")
+focus_neighbor_right = NodePath("../StartButton")
+theme = ExtResource("11_mbr4u")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r8f70")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ts6dl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_uviw1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ogv7s")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_42y5u")
+icon = ExtResource("30_3huhr")
+icon_alignment = 1
+expand_icon = true
+
+[node name="25" type="Sprite2D" parent="."]
+position = Vector2(655, 452)
+scale = Vector2(4, 4)
+texture = ExtResource("31_uknbb")
+
+[node name="26" type="Sprite2D" parent="."]
+position = Vector2(783, 452)
+scale = Vector2(4, 4)
+texture = ExtResource("32_imyev")
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 670.0
+offset_top = 434.0
+offset_right = 748.0
+offset_bottom = 465.0
+focus_neighbor_left = NodePath("../StartButton")
+focus_neighbor_right = NodePath("../LevelSelectorButton")
+theme = ExtResource("11_mbr4u")
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1di7d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_djypc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1yfaf")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4co8p")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cqx4a")
+text = "Salir"
+
+[connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer/Credits2" to="." method="_on_level_select_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer/LevelSelect" to="." method="_on_level_select_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/Credits" to="." method="_on_level_select_pressed"]
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="LevelSelectorButton" to="." method="_on_level_selector_button_pressed"]
+[connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

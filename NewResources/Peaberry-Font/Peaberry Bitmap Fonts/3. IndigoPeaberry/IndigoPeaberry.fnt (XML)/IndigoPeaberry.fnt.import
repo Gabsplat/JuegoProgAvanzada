@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://d187l6c427jpu"
+path="res://.godot/imported/IndigoPeaberry.fnt-9fda50f69b40fdf207e12f37fd54bffa.fontdata"
+
+[deps]
+
+source_file="res://NewResources/Peaberry-Font/Peaberry Bitmap Fonts/3. IndigoPeaberry/IndigoPeaberry.fnt (XML)/IndigoPeaberry.fnt"
+dest_files=["res://.godot/imported/IndigoPeaberry.fnt-9fda50f69b40fdf207e12f37fd54bffa.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

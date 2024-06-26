@@ -28,3 +28,8 @@ func emit_level_selected(level):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_quit_button_pressed():
+	get_tree().change_scene_to_file("res://Scenes/UI/Menus/main_menu.tscn")
+	pass # Replace with function body.
