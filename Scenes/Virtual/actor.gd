@@ -6,6 +6,7 @@ const DEFAULT_JUMP_HEIGHT = 2.5
 const  TILESIZE = Vector2(70, 70)
 
 @export var speed = DEFAULT_SPEED
+@export var jump_force = 1
 @export_range(0, 300, 1, "suffix:px", "or_greater", "or_less", "hide_slider") var jump_height : int = 2.5:
 	set(value):
 		jump_height = value
@@ -24,7 +25,7 @@ var last_velocity : Vector2
 signal hit_body(body) 
 
 func calculate_jump_velocity(distance):
-	return -sqrt(2 * gravity * distance)
+	return -sqrt(jump_force * gravity * distance)
 
 func _ready():
 	pass

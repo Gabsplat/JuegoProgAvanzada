@@ -36,6 +36,9 @@ func _ready():
 
 
 func handle_animation(_delta):
+	if(Input.is_action_just_pressed("attack")):
+		print("attack")
+		$AnimatedSprite2D.play("attack")
 	if is_on_floor():
 		if velocity.x > 5:
 			$AnimatedSprite2D.play("walk")
@@ -114,6 +117,7 @@ func _on_coyote_timer_timeout():
 
 func react_to_hitting(_hitbody):
 	# Have the player jump
+	$AnimatedSprite2D.play("hurt")
 	velocity.y = jump_vel
 	jumping = true
 
