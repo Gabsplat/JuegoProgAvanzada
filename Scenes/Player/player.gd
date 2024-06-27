@@ -4,6 +4,7 @@ class_name Player
 @export var coyote_time_frames = 6;
 @export var jump_time_frames = 6;
 
+@onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 
 #Taken from Kids Can Code - https://kidscancode.org/godot_recipes/4.x/2d/platform_character/index.html
 
@@ -16,6 +17,8 @@ class_name Player
 var health = 3
 
 var jumping = true
+var isAttacking = false
+var isGettingHurt = false
 
 #Coyote code based on KIDS CAN CODE
 #https://kidscancode.org/godot_recipes/4.x/2d/coyote_time/index.html
@@ -37,22 +40,24 @@ func _ready():
 
 func handle_animation(_delta):
 	if(Input.is_action_just_pressed("attack")):
-		print("attack")
-		$AnimatedSprite2D.play("attack")
-	if is_on_floor():
-		if velocity.x > 5:
-			$AnimatedSprite2D.play("walk")
-			$AnimatedSprite2D.flip_h = false
-		elif velocity.x < -5:
-			$AnimatedSprite2D.play("walk")
-			$AnimatedSprite2D.flip_h = true
+		isAttacking = true
+		$Attack/CollisionShape2D.disabled = false
+		anim.play("attack")
+	if not isAttacking and not isGettingHurt:
+		if is_on_floor():
+			if velocity.x > 5:
+				anim.play("walk")
+				anim.flip_h = false
+			elif velocity.x < -5:
+				anim.play("walk")
+				anim.flip_h = true
+			else:
+				anim.play("default")
 		else:
-			$AnimatedSprite2D.play("default")
-	else:
-		if velocity.y < 0:
-			$AnimatedSprite2D.play("jump")
-		else:
-			$AnimatedSprite2D.play("fall")
+			if velocity.y < 0:
+				anim.play("jump")
+			else:
+				anim.play("fall")
 
 func handle_gravity(delta):
 	if velocity.y > 0:
@@ -97,10 +102,12 @@ func take_hit(hitter):
 	velocity.x = global_position.direction_to(hitter.global_position).x * jump_vel * 3
 	if is_on_floor():
 		velocity.y = jump_vel*.5
-	$AnimatedSprite2D.play("hurt")
+	anim.play("hurt")
+	isGettingHurt = true
 	health -= 1
 	player_lost_health.emit(health)
 	if health <= 0:
+		health = 3
 		player_lost_all_health.emit()
 
 func set_up_camera_limit(rect:Rect2i):
@@ -117,8 +124,23 @@ func _on_coyote_timer_timeout():
 
 func react_to_hitting(_hitbody):
 	# Have the player jump
-	$AnimatedSprite2D.play("hurt")
+	print("auch")
+	anim.play("hurt")
+	isGettingHurt = true
 	velocity.y = jump_vel
 	jumping = true
 
 
+
+
+func _on_animated_sprite_2d_animation_finished():
+	print("anim finished: " + anim.animation)
+	if anim.animation == "attack":
+		$Attack/CollisionShape2D.disabled = true
+		isAttacking = false
+	if anim.animation == "hurt":
+		isGettingHurt = false
+
+
+func _on_animated_sprite_2d_animation_changed():
+	pass # Replace with function body.

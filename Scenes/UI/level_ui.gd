@@ -13,6 +13,11 @@ extends CanvasLayer
 
 func _ready():
 	pass # Replace with function body.
+	
+func full_health():
+	current_heart_index = len(hearts)-1
+	for i in range(3):
+		hearts[i].texture = full_heart_tex
 
 func gain_health():
 	current_heart_index = min(len(hearts)-1, current_heart_index+1)

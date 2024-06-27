@@ -31,3 +31,14 @@ func flip():
 	else :
 		$AnimationPlayer.play("FlipLeft")
 	$AnimationPlayer.advance(0)
+
+
+func _on_hit_body(body):
+	print(body)
+	pass # Replace with function body.
+
+
+func _on_hitbox_area_entered(area):
+	if area.is_in_group("Sword"):
+		$".".queue_free()
+	pass # Replace with function body.

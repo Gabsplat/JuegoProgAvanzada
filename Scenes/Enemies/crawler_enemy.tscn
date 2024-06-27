@@ -8,7 +8,7 @@
 size = Vector2(31, 22)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdibw"]
-size = Vector2(33.5, 20)
+size = Vector2(32.75, 20)
 
 [sub_resource type="Animation" id="Animation_h7aoi"]
 resource_name = "FlipLeft"
@@ -249,6 +249,8 @@ script = ExtResource("2_vob1e")
 speed = 50.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." index="0"]
+position = Vector2(-2.5, 3)
+scale = Vector2(0.66, 0.785714)
 texture = ExtResource("2_cy8ya")
 flip_h = true
 
@@ -274,3 +276,6 @@ target_position = Vector2(0, 20)
 libraries = {
 "": SubResource("AnimationLibrary_h2pxc")
 }
+
+[connection signal="hit_body" from="." to="." method="_on_hit_body"]
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
