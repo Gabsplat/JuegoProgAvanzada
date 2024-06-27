@@ -1,0 +1,205 @@
+[gd_scene load_steps=31 format=3 uid="uid://delrx014ntf2u"]
+
+[ext_resource type="Script" path="res://Scenes/UI/Menus/optionsMenu.gd" id="1_jdd7b"]
+[ext_resource type="Texture2D" uid="uid://xe1h3fisjrci" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/1.png" id="2_epfwq"]
+[ext_resource type="VideoStream" path="res://menuVideo.ogv" id="2_tsf8i"]
+[ext_resource type="Texture2D" uid="uid://cbqohbtg842ba" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/2.png" id="3_u7eoh"]
+[ext_resource type="Texture2D" uid="uid://cpu6435u06a34" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/3.png" id="4_ihfim"]
+[ext_resource type="Texture2D" uid="uid://c6uu4jsbx6tpk" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/4.png" id="5_ocwwq"]
+[ext_resource type="Texture2D" uid="uid://cc1f5pf6p0j8j" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/5.png" id="6_icjj5"]
+[ext_resource type="Texture2D" uid="uid://c5s83uvhcisge" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/6.png" id="7_rdtpf"]
+[ext_resource type="Texture2D" uid="uid://dp5cre7c0xy7m" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/7.png" id="8_85lvy"]
+[ext_resource type="Texture2D" uid="uid://bcy3utwsojduw" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/8.png" id="9_ku48k"]
+[ext_resource type="Texture2D" uid="uid://cm6in1uv1580i" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/9.png" id="10_dqvnk"]
+[ext_resource type="Texture2D" uid="uid://fx5d15hj4f7m" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/1.png" id="11_4x1t3"]
+[ext_resource type="Texture2D" uid="uid://d3bf0rqrp37p0" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/2.png" id="12_wtkls"]
+[ext_resource type="Texture2D" uid="uid://cpnuuchcp2kfj" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/3.png" id="13_7cynk"]
+[ext_resource type="Texture2D" uid="uid://lfe1m0ifujvu" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/8.png" id="14_vcx1a"]
+[ext_resource type="Texture2D" uid="uid://cs7wmdylr3un" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/9.png" id="15_6lvis"]
+[ext_resource type="Texture2D" uid="uid://ddvd4psu1unnf" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Paper/7.png" id="16_7n3db"]
+[ext_resource type="Theme" uid="uid://bkxmys60y8ksu" path="res://PirateTheme.tres" id="17_yr50i"]
+[ext_resource type="FontFile" uid="uid://cdp1w0hkk28v7" path="res://Assets/UI/Kenney Thick.ttf" id="18_4em2g"]
+[ext_resource type="Texture2D" uid="uid://bonxjb2vq2gta" path="res://NewResources/Wood and Paper UI/Sprites/Small Banner/13.png" id="23_7ala1"]
+[ext_resource type="Texture2D" uid="uid://0vfsntahrmcs" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Button/1.png" id="25_7naw4"]
+[ext_resource type="Texture2D" uid="uid://cmw6xau027ubi" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/1.png" id="28_svp3s"]
+[ext_resource type="Texture2D" uid="uid://cwdiyt0ke17c6" path="res://NewResources/Wood and Paper UI/Sprites/Small Banner/9.png" id="29_q32g0"]
+[ext_resource type="Texture2D" uid="uid://c7put1saaomdr" path="res://NewResources/Wood and Paper UI/Sprites/Small Banner/4.png" id="30_kirki"]
+[ext_resource type="Texture2D" uid="uid://bbndkq63c28v2" path="res://NewResources/Wood and Paper UI/Sprites/Small Text/Small Icons/1.png" id="31_pn73g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vcqkk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rk747"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0odoa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0oprt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mf61a"]
+
+[node name="OptionsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jdd7b")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Panel"]
+modulate = Color(0.637843, 0.637843, 0.637843, 1)
+layout_mode = 0
+offset_right = 2306.0
+offset_bottom = 1298.0
+scale = Vector2(0.5, 0.5)
+stream = ExtResource("2_tsf8i")
+autoplay = true
+expand = true
+loop = true
+
+[node name="1" type="Sprite2D" parent="Panel"]
+position = Vector2(389, 161)
+scale = Vector2(5, 5)
+texture = ExtResource("2_epfwq")
+
+[node name="2" type="Sprite2D" parent="Panel"]
+position = Vector2(549, 161)
+scale = Vector2(5, 5)
+texture = ExtResource("3_u7eoh")
+
+[node name="3" type="Sprite2D" parent="Panel"]
+position = Vector2(709, 161)
+scale = Vector2(5, 5)
+texture = ExtResource("4_ihfim")
+
+[node name="4" type="Sprite2D" parent="Panel"]
+position = Vector2(389, 321)
+scale = Vector2(5, 5)
+texture = ExtResource("5_ocwwq")
+
+[node name="5" type="Sprite2D" parent="Panel"]
+position = Vector2(549, 321)
+scale = Vector2(5, 5)
+texture = ExtResource("6_icjj5")
+
+[node name="6" type="Sprite2D" parent="Panel"]
+position = Vector2(709, 321)
+scale = Vector2(5, 5)
+texture = ExtResource("7_rdtpf")
+
+[node name="7" type="Sprite2D" parent="Panel"]
+position = Vector2(389, 481)
+scale = Vector2(5, 5)
+texture = ExtResource("8_85lvy")
+
+[node name="8" type="Sprite2D" parent="Panel"]
+position = Vector2(549, 481)
+scale = Vector2(5, 5)
+texture = ExtResource("9_ku48k")
+
+[node name="9" type="Sprite2D" parent="Panel"]
+position = Vector2(709, 481)
+scale = Vector2(5, 5)
+texture = ExtResource("10_dqvnk")
+
+[node name="10" type="Sprite2D" parent="Panel"]
+position = Vector2(390, 167)
+scale = Vector2(5, 5)
+texture = ExtResource("11_4x1t3")
+
+[node name="11" type="Sprite2D" parent="Panel"]
+position = Vector2(548, 167)
+scale = Vector2(5, 5)
+texture = ExtResource("12_wtkls")
+
+[node name="12" type="Sprite2D" parent="Panel"]
+position = Vector2(705, 167)
+scale = Vector2(5, 5)
+texture = ExtResource("13_7cynk")
+
+[node name="17" type="Sprite2D" parent="Panel"]
+position = Vector2(546, 271)
+scale = Vector2(5, 5)
+texture = ExtResource("14_vcx1a")
+
+[node name="13" type="Sprite2D" parent="Panel"]
+position = Vector2(705, 271)
+scale = Vector2(5, 5)
+texture = ExtResource("15_6lvis")
+
+[node name="14" type="Sprite2D" parent="Panel"]
+position = Vector2(390, 271)
+scale = Vector2(5, 5)
+texture = ExtResource("16_7n3db")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 413.0
+offset_top = 203.0
+offset_right = 593.0
+offset_bottom = 237.0
+theme = ExtResource("17_yr50i")
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_fonts/font = ExtResource("18_4em2g")
+theme_override_font_sizes/font_size = 30
+text = "Musica"
+
+[node name="29" type="Sprite2D" parent="Panel"]
+position = Vector2(343, 122)
+scale = Vector2(5, 5)
+texture = ExtResource("28_svp3s")
+
+[node name="25" type="Sprite2D" parent="Panel"]
+position = Vector2(402, 386)
+scale = Vector2(6, 6)
+texture = ExtResource("29_q32g0")
+
+[node name="26" type="Sprite2D" parent="Panel"]
+position = Vector2(786, 386)
+scale = Vector2(6, 6)
+texture = ExtResource("30_kirki")
+
+[node name="QuitButton" type="Button" parent="Panel"]
+layout_mode = 2
+offset_left = 321.0
+offset_top = 99.0
+offset_right = 365.0
+offset_bottom = 132.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vcqkk")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rk747")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0odoa")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_0oprt")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mf61a")
+icon = ExtResource("31_pn73g")
+expand_icon = true
+
+[node name="13" type="Sprite2D" parent="."]
+position = Vector2(594, 386)
+scale = Vector2(6, 6)
+texture = ExtResource("23_7ala1")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 462.0
+offset_top = 364.0
+offset_right = 676.0
+offset_bottom = 398.0
+theme = ExtResource("17_yr50i")
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_fonts/font = ExtResource("18_4em2g")
+theme_override_font_sizes/font_size = 30
+text = "Volumen"
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(656, 216)
+scale = Vector2(4, 4)
+texture = ExtResource("25_7naw4")
+
+[connection signal="pressed" from="Panel/QuitButton" to="." method="_on_quit_button_pressed"]
