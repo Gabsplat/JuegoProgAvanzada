@@ -40,5 +40,6 @@ func _on_hit_body(body):
 
 func _on_hitbox_area_entered(area):
 	if area.is_in_group("Sword"):
+		print("atacado auch")
 		$".".queue_free()
 	pass # Replace with function body.
