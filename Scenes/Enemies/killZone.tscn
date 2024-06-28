@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b07gmdaijv5nb"]
+
+[node name="KillZone" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 2

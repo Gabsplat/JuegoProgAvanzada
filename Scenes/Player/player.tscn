@@ -168,6 +168,7 @@ autoplay = "default"
 [node name="Camera2D" type="Camera2D" parent="." index="2"]
 offset = Vector2(0, -50)
 zoom = Vector2(2.3, 2.3)
+limit_smoothed = true
 drag_horizontal_enabled = true
 
 [node name="Timers" type="Node" parent="." index="3"]
