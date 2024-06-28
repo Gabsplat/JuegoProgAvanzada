@@ -1,6 +1,6 @@
-[gd_scene load_steps=24 format=3 uid="uid://cty8uqqbwamb5"]
+[gd_scene load_steps=24 format=3 uid="uid://dapf8vsupgo5m"]
 
-[ext_resource type="Texture2D" uid="uid://dyoxu3u7x8xbk" path="res://Assets/Tiles/island_tile_sheet.png" id="1_n8otp"]
+[ext_resource type="Texture2D" uid="uid://dyoxu3u7x8xbk" path="res://NewResources/Palm Tree Island/Sprites/Terrain/Terrain (32x32).png" id="1_n8otp"]
 [ext_resource type="PackedScene" uid="uid://b6n2e6kkf0hqu" path="res://Scenes/Enemies/crawler_enemy.tscn" id="2_hd7le"]
 [ext_resource type="Texture2D" uid="uid://p2vq88fyvsao" path="res://NewResources/Palm Tree Island/Sprites/Objects/Spikes/Spikes.png" id="3_4p47r"]
 [ext_resource type="Texture2D" uid="uid://t7kgr3asdmqn" path="res://NewResources/Palm Tree Island/Sprites/Objects/Flag/Flag 01.png" id="4_0pikq"]
