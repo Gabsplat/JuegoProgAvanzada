@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://delrx014ntf2u"]
+[gd_scene load_steps=44 format=3 uid="uid://delrx014ntf2u"]
 
 [ext_resource type="Script" path="res://Scenes/UI/Menus/optionsMenu.gd" id="1_jdd7b"]
 [ext_resource type="Texture2D" uid="uid://xe1h3fisjrci" path="res://NewResources/Wood and Paper UI/Sprites/Green Board/1.png" id="2_epfwq"]
@@ -20,11 +20,18 @@
 [ext_resource type="Theme" uid="uid://bkxmys60y8ksu" path="res://PirateTheme.tres" id="17_yr50i"]
 [ext_resource type="FontFile" uid="uid://cdp1w0hkk28v7" path="res://Assets/UI/Kenney Thick.ttf" id="18_4em2g"]
 [ext_resource type="Texture2D" uid="uid://bonxjb2vq2gta" path="res://NewResources/Wood and Paper UI/Sprites/Small Banner/13.png" id="23_7ala1"]
+[ext_resource type="Texture2D" uid="uid://c1rp6cpg7y76b" path="res://NewResources/Wood and Paper UI/Sprites/Sliders/3.png" id="24_u0uo3"]
 [ext_resource type="Texture2D" uid="uid://0vfsntahrmcs" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Button/1.png" id="25_7naw4"]
+[ext_resource type="Script" path="res://Scenes/UI/Menus/HSlider.gd" id="25_qkudn"]
+[ext_resource type="Texture2D" uid="uid://b6d21rirxsbda" path="res://NewResources/Wood and Paper UI/Sprites/Sliders/5.png" id="26_q60pb"]
+[ext_resource type="Texture2D" uid="uid://cjqgwc71mjepx" path="res://NewResources/Wood and Paper UI/Sprites/Sliders/6.png" id="27_uhwnm"]
+[ext_resource type="Texture2D" uid="uid://cv1rdn1aryi8p" path="res://NewResources/Wood and Paper UI/Sprites/Sliders/4.png" id="28_2bgkj"]
 [ext_resource type="Texture2D" uid="uid://cmw6xau027ubi" path="res://NewResources/Wood and Paper UI/Sprites/Green Button/1.png" id="28_svp3s"]
 [ext_resource type="Texture2D" uid="uid://cwdiyt0ke17c6" path="res://NewResources/Wood and Paper UI/Sprites/Small Banner/9.png" id="29_q32g0"]
 [ext_resource type="Texture2D" uid="uid://c7put1saaomdr" path="res://NewResources/Wood and Paper UI/Sprites/Small Banner/4.png" id="30_kirki"]
+[ext_resource type="Texture2D" uid="uid://bscovvri10nv0" path="res://NewResources/Wood and Paper UI/Sprites/Small Text/Small Icons/6.png" id="31_6egls"]
 [ext_resource type="Texture2D" uid="uid://bbndkq63c28v2" path="res://NewResources/Wood and Paper UI/Sprites/Small Text/Small Icons/1.png" id="31_pn73g"]
+[ext_resource type="Script" path="res://Scenes/UI/Menus/OptionsButton.gd" id="32_q6tun"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vcqkk"]
 
@@ -35,6 +42,18 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0oprt"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mf61a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_56stx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_11q50"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fm484"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lyanw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t7d2x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_50ut3"]
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -56,8 +75,10 @@ grow_vertical = 2
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Panel"]
 modulate = Color(0.637843, 0.637843, 0.637843, 1)
 layout_mode = 0
-offset_right = 2306.0
-offset_bottom = 1298.0
+offset_left = -5.0
+offset_top = -1.0
+offset_right = 2301.0
+offset_bottom = 1297.0
 scale = Vector2(0.5, 0.5)
 stream = ExtResource("2_tsf8i")
 autoplay = true
@@ -202,4 +223,74 @@ position = Vector2(656, 216)
 scale = Vector2(4, 4)
 texture = ExtResource("25_7naw4")
 
+[node name="5" type="Sprite2D" parent="."]
+position = Vector2(478, 449)
+scale = Vector2(4, 4)
+texture = ExtResource("26_q60pb")
+
+[node name="8" type="Sprite2D" parent="."]
+position = Vector2(517, 449)
+scale = Vector2(4, 4)
+texture = ExtResource("26_q60pb")
+
+[node name="9" type="Sprite2D" parent="."]
+position = Vector2(556, 449)
+scale = Vector2(4, 4)
+texture = ExtResource("26_q60pb")
+
+[node name="10" type="Sprite2D" parent="."]
+position = Vector2(588, 449)
+scale = Vector2(4, 4)
+texture = ExtResource("26_q60pb")
+
+[node name="7" type="Sprite2D" parent="."]
+position = Vector2(625, 449)
+scale = Vector2(4, 4)
+texture = ExtResource("26_q60pb")
+
+[node name="6" type="Sprite2D" parent="."]
+position = Vector2(661, 449)
+scale = Vector2(4, 4)
+texture = ExtResource("27_uhwnm")
+
+[node name="4" type="Sprite2D" parent="."]
+position = Vector2(442, 449)
+scale = Vector2(4, 4)
+texture = ExtResource("28_2bgkj")
+
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 416.0
+offset_top = 425.0
+offset_right = 525.0
+offset_bottom = 444.0
+scale = Vector2(2.5, 2.5)
+theme_override_icons/grabber = ExtResource("24_u0uo3")
+theme_override_icons/grabber_highlight = ExtResource("24_u0uo3")
+theme_override_styles/slider = SubResource("StyleBoxEmpty_56stx")
+max_value = 1.0
+step = 0.001
+script = ExtResource("25_qkudn")
+
+[node name="MusicButton" type="Button" parent="."]
+offset_left = 642.0
+offset_top = 199.0
+offset_right = 651.0
+offset_bottom = 205.0
+scale = Vector2(4, 4)
+focus_neighbor_left = NodePath("../QuitButton")
+focus_neighbor_top = NodePath("../LevelSelectorButton")
+focus_neighbor_right = NodePath("../StartButton")
+theme = ExtResource("17_yr50i")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_11q50")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fm484")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lyanw")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_t7d2x")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_50ut3")
+icon = ExtResource("31_6egls")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("32_q6tun")
+
 [connection signal="pressed" from="Panel/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="MusicButton" to="." method="_on_music_button_pressed"]
