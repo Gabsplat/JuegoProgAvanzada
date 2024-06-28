@@ -11,7 +11,6 @@ extends CanvasLayer
 @onready var deathBar = preload("res://NewResources/Wood and Paper UI/Sprites/Life Bars/Big Bars/2.png")
 @onready var full_heart_tex = preload("res://NewResources/Wood and Paper UI/Sprites/Life Bars/Colors/1.png")
 @onready var empty_heart_tex = preload("res://Assets/UI/hud_heartEmpty.png")
-
 func _ready():
 	pass # Replace with function body.
 
