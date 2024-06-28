@@ -47,9 +47,11 @@ func handle_animation(_delta):
 		if is_on_floor():
 			if velocity.x > 5:
 				anim.play("walk")
+				$Attack.set_scale(Vector2(1, 1))
 				anim.flip_h = false
 			elif velocity.x < -5:
 				anim.play("walk")
+				$Attack.set_scale(Vector2(-1, 1))
 				anim.flip_h = true
 			else:
 				anim.play("default")

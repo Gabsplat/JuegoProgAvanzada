@@ -1,0 +1,72 @@
+[gd_scene load_steps=9 format=3 uid="uid://yvj4810elsmp"]
+
+[ext_resource type="Script" path="res://Scenes/Enemies/crawler_enemy.gd" id="1_p4lfn"]
+[ext_resource type="Texture2D" uid="uid://cs4bwgwphy63y" path="res://Assets/Enemies/Flyer/flyFly2.png" id="2_xephh"]
+[ext_resource type="Texture2D" uid="uid://bqi14ykvo1wyu" path="res://Assets/Enemies/Flyer/flyFly1.png" id="3_mxyg0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dd41j"]
+size = Vector2(31, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fdibw"]
+size = Vector2(32.75, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0n2p"]
+atlas = ExtResource("2_xephh")
+region = Rect2(0, 0, 75, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4xhn"]
+atlas = ExtResource("3_mxyg0")
+region = Rect2(0, 0, 72, 36)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e2ahy"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 0.1,
+"texture": SubResource("AtlasTexture_f0n2p")
+}, {
+"duration": 0.1,
+"texture": SubResource("AtlasTexture_j4xhn")
+}],
+"loop": false,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="fly" type="CharacterBody2D" groups=["actor", "enemy"]]
+collision_layer = 6
+collision_mask = 15
+script = ExtResource("1_p4lfn")
+speed = 50.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 3)
+shape = SubResource("RectangleShape2D_dd41j")
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 6
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-3, 4)
+shape = SubResource("RectangleShape2D_fdibw")
+debug_color = Color(0.980392, 0.133333, 0, 0.419608)
+
+[node name="WallCast" type="RayCast2D" parent="."]
+target_position = Vector2(-25, 0)
+collision_mask = 5
+
+[node name="Marker2D" type="Marker2D" parent="."]
+
+[node name="FloorCast" type="RayCast2D" parent="Marker2D"]
+position = Vector2(-24, 0)
+target_position = Vector2(0, 20)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_e2ahy")
+frame = 1
+frame_progress = 1.0
+
+[connection signal="hit_body" from="." to="." method="_on_hit_body"]
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
