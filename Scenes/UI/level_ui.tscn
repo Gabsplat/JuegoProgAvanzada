@@ -1,36 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://ubm3g25m2mvs"]
+[gd_scene load_steps=4 format=3 uid="uid://ubm3g25m2mvs"]
 
 [ext_resource type="Script" path="res://Scenes/UI/level_ui.gd" id="1_0wvi5"]
 [ext_resource type="Texture2D" uid="uid://pgvp75401bfx" path="res://Assets/UI/hud_heartFull.png" id="2_s3qdv"]
 [ext_resource type="Theme" uid="uid://dxortrvrvcbys" path="res://Scenes/UI/score.tres" id="3_gqkha"]
-[ext_resource type="Texture2D" uid="uid://bqotiecsqqqre" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Big Bars/1.png" id="4_c1gdp"]
-[ext_resource type="Texture2D" uid="uid://cdwjuo83msltc" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Big Bars/3.png" id="5_55ilp"]
-[ext_resource type="Texture2D" uid="uid://boy5qewryqr8u" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Big Bars/4.png" id="6_7t0hb"]
-[ext_resource type="Texture2D" uid="uid://blc6catlkw7k6" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Colors/1.png" id="7_wbtj4"]
-[ext_resource type="Texture2D" uid="uid://d283u7uux15v" path="res://NewResources/Wood and Paper UI/Sprites/Prefabs/7.png" id="8_jyyhm"]
 
 [node name="LevelUI" type="CanvasLayer"]
 script = ExtResource("1_0wvi5")
-
-[node name="HeartBar" type="Sprite2D" parent="."]
-position = Vector2(106, 84)
-scale = Vector2(4, 4)
-texture = ExtResource("4_c1gdp")
-
-[node name="4" type="Sprite2D" parent="."]
-position = Vector2(232, 84)
-scale = Vector2(4, 4)
-texture = ExtResource("5_55ilp")
-
-[node name="6" type="Sprite2D" parent="."]
-position = Vector2(318, 84)
-scale = Vector2(4, 4)
-texture = ExtResource("5_55ilp")
-
-[node name="5" type="Sprite2D" parent="."]
-position = Vector2(445, 84)
-scale = Vector2(4, 4)
-texture = ExtResource("6_7t0hb")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -39,30 +14,6 @@ anchor_bottom = 0.17284
 grow_horizontal = 2
 size_flags_horizontal = 3
 metadata/_edit_use_anchors_ = true
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="Control"]
-layout_mode = 2
-offset_left = 110.0
-offset_top = 6.0
-offset_right = 491.0
-offset_bottom = 43.0
-scale = Vector2(4, 4)
-theme_override_constants/separation = 0
-
-[node name="Health2" type="TextureRect" parent="Control/HBoxContainer2"]
-layout_mode = 2
-texture = ExtResource("7_wbtj4")
-stretch_mode = 5
-
-[node name="Health3" type="TextureRect" parent="Control/HBoxContainer2"]
-layout_mode = 2
-texture = ExtResource("7_wbtj4")
-stretch_mode = 5
-
-[node name="Health4" type="TextureRect" parent="Control/HBoxContainer2"]
-layout_mode = 2
-texture = ExtResource("7_wbtj4")
-stretch_mode = 5
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control"]
 layout_mode = 1
@@ -78,28 +29,26 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="Control/HBoxContainer/HealthContainer"]
-visible = false
 layout_mode = 2
 text = "Vidas"
 horizontal_alignment = 1
 
-[node name="HBoxContainer1" type="HBoxContainer" parent="Control/HBoxContainer/HealthContainer"]
-visible = false
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/HBoxContainer/HealthContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 alignment = 1
 
-[node name="Health1" type="TextureRect" parent="Control/HBoxContainer/HealthContainer/HBoxContainer1"]
+[node name="Health1" type="TextureRect" parent="Control/HBoxContainer/HealthContainer/HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_s3qdv")
 stretch_mode = 5
 
-[node name="Health2" type="TextureRect" parent="Control/HBoxContainer/HealthContainer/HBoxContainer1"]
+[node name="Health2" type="TextureRect" parent="Control/HBoxContainer/HealthContainer/HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_s3qdv")
 stretch_mode = 5
 
-[node name="Health3" type="TextureRect" parent="Control/HBoxContainer/HealthContainer/HBoxContainer1"]
+[node name="Health3" type="TextureRect" parent="Control/HBoxContainer/HealthContainer/HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_s3qdv")
 stretch_mode = 5
@@ -110,16 +59,10 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="Control/HBoxContainer/ScoreContainer"]
-visible = false
 layout_mode = 2
 size_flags_vertical = 1
 text = "Puntaje"
 horizontal_alignment = 1
-
-[node name="Health4" type="TextureRect" parent="Control/HBoxContainer/ScoreContainer"]
-layout_mode = 2
-texture = ExtResource("8_jyyhm")
-stretch_mode = 5
 
 [node name="Label2" type="Label" parent="Control/HBoxContainer/ScoreContainer"]
 layout_mode = 2
