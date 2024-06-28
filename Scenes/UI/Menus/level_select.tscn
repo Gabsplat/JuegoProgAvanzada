@@ -272,4 +272,7 @@ theme_override_font_sizes/font_size = 25
 text = "Niveles"
 
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="lv1Button" to="." method="_on_lv_1_button_pressed"]
+[connection signal="pressed" from="lv2Button" to="." method="_on_lv_2_button_pressed"]
+[connection signal="pressed" from="lv3Button" to="." method="_on_lv_3_button_pressed"]
 [connection signal="pressed" from="lv4Button" to="." method="_on_lv_4_button_pressed"]
