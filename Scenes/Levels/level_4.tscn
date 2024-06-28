@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmkw0bkkwtqu2"]
+[gd_scene load_steps=4 format=3 uid="uid://d3il7evdkwul5"]
 
 [ext_resource type="PackedScene" uid="uid://vsxauni78yw6" path="res://Scenes/Virtual/BaseLevel.tscn" id="1_pktcv"]
 [ext_resource type="AudioStream" uid="uid://dd78xmvmtobl0" path="res://Assets/Music/Aventuras de 8 Bits.mp3" id="2_5qejo"]
