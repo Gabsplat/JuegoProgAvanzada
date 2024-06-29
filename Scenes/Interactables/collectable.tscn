@@ -3,10 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://u2fh1xedqj88" path="res://Scenes/Virtual/interactable.tscn" id="1_lnge0"]
 [ext_resource type="Texture2D" uid="uid://s3l5xq3ra512" path="res://Assets/Items/coinGold.png" id="2_0otk1"]
 [ext_resource type="Script" path="res://Scenes/Interactables/collectable.gd" id="2_mljyq"]
-[ext_resource type="Texture2D" uid="uid://cytwneg445yka" path="res://NewResources/Pirate Treasure/Sprites/Gold Coin/01.png" id="4_680hf"]
-[ext_resource type="Texture2D" uid="uid://b0w80dsq1l357" path="res://NewResources/Pirate Treasure/Sprites/Gold Coin/02.png" id="5_uyxv6"]
-[ext_resource type="Texture2D" uid="uid://cjf7lwmecr31x" path="res://NewResources/Pirate Treasure/Sprites/Gold Coin/03.png" id="6_n6mko"]
-[ext_resource type="Texture2D" uid="uid://jkjukd6d8gy" path="res://NewResources/Pirate Treasure/Sprites/Gold Coin/04.png" id="7_pbcxf"]
+[ext_resource type="Texture2D" uid="uid://cytwneg445yka" path="res://Assets/Items/01.png" id="4_680hf"]
+[ext_resource type="Texture2D" uid="uid://b0w80dsq1l357" path="res://Assets/Items/02.png" id="5_uyxv6"]
+[ext_resource type="Texture2D" uid="uid://cjf7lwmecr31x" path="res://Assets/Items/03.png" id="6_n6mko"]
+[ext_resource type="Texture2D" uid="uid://jkjukd6d8gy" path="res://Assets/Items/04.png" id="7_pbcxf"]
 
 [sub_resource type="Animation" id="Animation_siten"]
 resource_name = "Collected"
