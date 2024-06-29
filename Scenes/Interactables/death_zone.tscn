@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bsa8sgay28e88"]
+[gd_scene load_steps=3 format=3 uid="uid://bpf3ilhbh57wg"]
 
 [ext_resource type="PackedScene" uid="uid://u2fh1xedqj88" path="res://Scenes/Virtual/interactable.tscn" id="1_8giqd"]
 [ext_resource type="Script" path="res://Scenes/Interactables/death_zone.gd" id="2_me76w"]

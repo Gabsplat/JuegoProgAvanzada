@@ -273,6 +273,7 @@ step = 0.001
 script = ExtResource("25_qkudn")
 
 [node name="MusicButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 642.0
 offset_top = 199.0
 offset_right = 651.0

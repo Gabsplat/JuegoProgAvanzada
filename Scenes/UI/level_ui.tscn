@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://ubm3g25m2mvs"]
+[gd_scene load_steps=10 format=3 uid="uid://ubm3g25m2mvs"]
 
 [ext_resource type="Script" path="res://Scenes/UI/level_ui.gd" id="1_0wvi5"]
 [ext_resource type="Texture2D" uid="uid://pgvp75401bfx" path="res://Assets/UI/hud_heartFull.png" id="2_s3qdv"]
 [ext_resource type="Theme" uid="uid://dxortrvrvcbys" path="res://Scenes/UI/score.tres" id="3_gqkha"]
 [ext_resource type="Texture2D" uid="uid://bqotiecsqqqre" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Big Bars/1.png" id="4_c1gdp"]
 [ext_resource type="Texture2D" uid="uid://cdwjuo83msltc" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Big Bars/3.png" id="5_55ilp"]
+[ext_resource type="Texture2D" uid="uid://d3nv3hr8oknap" path="res://NewResources/Wood and Paper UI/Sprites/Prefabs/1.png" id="6_0jmi4"]
 [ext_resource type="Texture2D" uid="uid://boy5qewryqr8u" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Big Bars/4.png" id="6_7t0hb"]
 [ext_resource type="Texture2D" uid="uid://blc6catlkw7k6" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Colors/1.png" id="7_wbtj4"]
 [ext_resource type="Texture2D" uid="uid://d283u7uux15v" path="res://NewResources/Wood and Paper UI/Sprites/Prefabs/7.png" id="8_jyyhm"]
@@ -64,6 +65,82 @@ layout_mode = 2
 texture = ExtResource("7_wbtj4")
 stretch_mode = 5
 
+[node name="LabelPuntos" type="Label" parent="Control"]
+layout_mode = 2
+offset_left = 824.0
+offset_top = -10.0
+offset_right = 977.0
+offset_bottom = 52.0
+size_flags_vertical = 3
+theme = ExtResource("3_gqkha")
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_font_sizes/font_size = 15
+text = "Puntos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelTiempo" type="Label" parent="Control"]
+layout_mode = 2
+offset_left = 1015.0
+offset_top = -10.0
+offset_right = 1168.0
+offset_bottom = 52.0
+size_flags_vertical = 3
+theme = ExtResource("3_gqkha")
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_font_sizes/font_size = 15
+text = "Tiempo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="Sprite2D" parent="Control"]
+position = Vector2(1090, 87)
+scale = Vector2(2, 2)
+texture = ExtResource("6_0jmi4")
+
+[node name="8" type="Sprite2D" parent="Control"]
+position = Vector2(1090, 88)
+scale = Vector2(2, 2)
+texture = ExtResource("8_jyyhm")
+
+[node name="3" type="Sprite2D" parent="Control"]
+position = Vector2(899, 87)
+scale = Vector2(2, 2)
+texture = ExtResource("6_0jmi4")
+
+[node name="9" type="Sprite2D" parent="Control"]
+position = Vector2(899, 88)
+scale = Vector2(2, 2)
+texture = ExtResource("8_jyyhm")
+
+[node name="Score" type="Label" parent="Control"]
+layout_mode = 2
+offset_left = 824.0
+offset_top = 57.0
+offset_right = 977.0
+offset_bottom = 119.0
+size_flags_vertical = 3
+theme = ExtResource("3_gqkha")
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Time" type="Label" parent="Control"]
+layout_mode = 2
+offset_left = 1002.0
+offset_top = 53.0
+offset_right = 1180.0
+offset_bottom = 123.0
+size_flags_vertical = 3
+theme = ExtResource("3_gqkha")
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="HBoxContainer" type="HBoxContainer" parent="Control"]
 layout_mode = 1
 anchors_preset = 15
@@ -76,12 +153,6 @@ grow_vertical = 2
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
-
-[node name="Label" type="Label" parent="Control/HBoxContainer/HealthContainer"]
-visible = false
-layout_mode = 2
-text = "Vidas"
-horizontal_alignment = 1
 
 [node name="HBoxContainer1" type="HBoxContainer" parent="Control/HBoxContainer/HealthContainer"]
 visible = false
@@ -103,46 +174,3 @@ stretch_mode = 5
 layout_mode = 2
 texture = ExtResource("2_s3qdv")
 stretch_mode = 5
-
-[node name="ScoreContainer" type="VBoxContainer" parent="Control/HBoxContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Label" type="Label" parent="Control/HBoxContainer/ScoreContainer"]
-visible = false
-layout_mode = 2
-size_flags_vertical = 1
-text = "Puntaje"
-horizontal_alignment = 1
-
-[node name="Health4" type="TextureRect" parent="Control/HBoxContainer/ScoreContainer"]
-layout_mode = 2
-texture = ExtResource("8_jyyhm")
-stretch_mode = 5
-
-[node name="Label2" type="Label" parent="Control/HBoxContainer/ScoreContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme = ExtResource("3_gqkha")
-text = "0"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="TimeContainer" type="VBoxContainer" parent="Control/HBoxContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Label" type="Label" parent="Control/HBoxContainer/TimeContainer"]
-layout_mode = 2
-text = "Tiempo"
-horizontal_alignment = 1
-
-[node name="Label2" type="Label" parent="Control/HBoxContainer/TimeContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme = ExtResource("3_gqkha")
-text = "0"
-horizontal_alignment = 1
-vertical_alignment = 1
