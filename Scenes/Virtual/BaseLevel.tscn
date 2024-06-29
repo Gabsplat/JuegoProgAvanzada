@@ -1,8 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://vsxauni78yw6"]
+[gd_scene load_steps=21 format=3 uid="uid://vsxauni78yw6"]
 
 [ext_resource type="Script" path="res://Scenes/Virtual/BaseLevel.gd" id="1_gi0ax"]
 [ext_resource type="PackedScene" uid="uid://dk6a56e3n3mbc" path="res://Scenes/Player/player.tscn" id="2_2wr2r"]
 [ext_resource type="PackedScene" uid="uid://boic0ihw3y8wu" path="res://Scenes/Interactables/exit.tscn" id="3_24241"]
+[ext_resource type="PackedScene" uid="uid://cm7vpknfgcqx7" path="res://Scenes/Objects/PalmeraDerecha.tscn" id="3_repav"]
+[ext_resource type="PackedScene" uid="uid://c3twulfk4bms2" path="res://Scenes/Objects/Palmera.tscn" id="4_scytg"]
 [ext_resource type="PackedScene" uid="uid://de5utrueqtaqj" path="res://Scenes/Interactables/checkpoint.tscn" id="5_t4l8f"]
 [ext_resource type="PackedScene" uid="uid://b6n2e6kkf0hqu" path="res://Scenes/Enemies/crawler_enemy.tscn" id="6_3c4nd"]
 [ext_resource type="PackedScene" uid="uid://c1bq0xi4a0k6s" path="res://Scenes/Interactables/collectable.tscn" id="6_nawf6"]
@@ -12,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://c7v4fggfefk5m" path="res://Scenes/Objects/Spikes.tscn" id="9_48xad"]
 [ext_resource type="PackedScene" uid="uid://bhgdgjy2jxwjs" path="res://Scenes/Enemies/flyer_enemy.tscn" id="9_ixmm2"]
 [ext_resource type="PackedScene" uid="uid://ubm3g25m2mvs" path="res://Scenes/UI/level_ui.tscn" id="9_ksn3r"]
+[ext_resource type="PackedScene" uid="uid://cotrat8att5c7" path="res://Scenes/Objects/PalmeraIzquierda.tscn" id="10_2imga"]
 [ext_resource type="Texture2D" uid="uid://boa3ck5th0v5w" path="res://Scenes/Levels/Terrain (32x32).png" id="10_py55v"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_muqlf"]
@@ -24,6 +27,9 @@ scenes/5/scene = ExtResource("7_0fme4")
 scenes/6/scene = ExtResource("8_vveao")
 scenes/7/scene = ExtResource("8_jfjs7")
 scenes/8/scene = ExtResource("9_48xad")
+scenes/9/scene = ExtResource("10_2imga")
+scenes/10/scene = ExtResource("3_repav")
+scenes/11/scene = ExtResource("4_scytg")
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_3eqbe"]
 resource_name = "Enemies"

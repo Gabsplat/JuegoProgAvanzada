@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dgq8aqvhj6bte"]
 
 [ext_resource type="PackedScene" uid="uid://cj44au4iela57" path="res://Scenes/Virtual/physics_moveable.tscn" id="1_g8u7f"]
-[ext_resource type="Texture2D" uid="uid://h71pnr04rxuf" path="res://Assets/Tiles/barrel.png" id="2_erj34"]
+[ext_resource type="Texture2D" uid="uid://h71pnr04rxuf" path="res://Assets/Tiles/barrel.png" id="2_hbi60"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_kpi2q"]
 friction = 0.91
@@ -19,6 +19,6 @@ position = Vector2(0.5, 3.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="." index="1"]
 position = Vector2(0.5, 3.5)
-texture = ExtResource("2_erj34")
+texture = ExtResource("2_hbi60")
 region_enabled = true
 region_rect = Rect2(0.890118, 2.45931, 23.6478, 25.6748)

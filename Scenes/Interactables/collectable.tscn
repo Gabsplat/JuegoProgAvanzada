@@ -140,7 +140,7 @@ animations = [{
 script = ExtResource("2_mljyq")
 
 [node name="CollisionShape2D" parent="." index="0"]
-position = Vector2(0, -0.5)
+position = Vector2(1, 7.5)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
 libraries = {
@@ -152,8 +152,7 @@ visible = false
 texture = ExtResource("2_0otk1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="3"]
-position = Vector2(-0.5, -0.5)
-scale = Vector2(1.5625, 1.5625)
+position = Vector2(0, 7)
 sprite_frames = SubResource("SpriteFrames_tlauu")
 autoplay = "default"
 frame_progress = 0.0115631

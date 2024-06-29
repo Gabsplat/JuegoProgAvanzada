@@ -3,31 +3,31 @@
 [ext_resource type="PackedScene" uid="uid://b2w20xqwbx54i" path="res://Scenes/Virtual/enemy.tscn" id="1_3usj6"]
 [ext_resource type="Texture2D" uid="uid://dkp58stu7khgm" path="res://Assets/Enemies/Drifter/slimeWalk1.png" id="2_cy8ya"]
 [ext_resource type="Script" path="res://Scenes/Enemies/crawler_enemy.gd" id="2_vob1e"]
-[ext_resource type="Texture2D" uid="uid://bm8irfg10jip0" path="res://NewResources/The Crusty Crew/Sprites/Crabby/02-Run/Run 01.png" id="3_ito1s"]
-[ext_resource type="Texture2D" uid="uid://b4vx06m8p6drm" path="res://NewResources/The Crusty Crew/Sprites/Crabby/08-Hit/Hit 01.png" id="3_oqawo"]
-[ext_resource type="Texture2D" uid="uid://ctpv75bq146rq" path="res://NewResources/The Crusty Crew/Sprites/Crabby/02-Run/Run 02.png" id="4_l276o"]
-[ext_resource type="Texture2D" uid="uid://bk6b4nd0pgvk5" path="res://NewResources/The Crusty Crew/Sprites/Crabby/08-Hit/Hit 02.png" id="4_yis7y"]
-[ext_resource type="Texture2D" uid="uid://do0ywnebe4cx6" path="res://NewResources/The Crusty Crew/Sprites/Crabby/02-Run/Run 03.png" id="5_3a4fr"]
-[ext_resource type="Texture2D" uid="uid://bychlns6pcln2" path="res://NewResources/The Crusty Crew/Sprites/Crabby/08-Hit/Hit 03.png" id="5_ekvno"]
-[ext_resource type="Texture2D" uid="uid://crvwsocjmmpu5" path="res://NewResources/The Crusty Crew/Sprites/Crabby/02-Run/Run 04.png" id="6_h8ge3"]
-[ext_resource type="Texture2D" uid="uid://b2gq42qlrmocm" path="res://NewResources/The Crusty Crew/Sprites/Crabby/08-Hit/Hit 04.png" id="6_qaqct"]
-[ext_resource type="Texture2D" uid="uid://b554my2axd8ll" path="res://NewResources/The Crusty Crew/Sprites/Crabby/02-Run/Run 05.png" id="7_gn4w4"]
-[ext_resource type="Texture2D" uid="uid://c8a504conw8is" path="res://NewResources/The Crusty Crew/Sprites/Crabby/02-Run/Run 06.png" id="8_7bw1y"]
+[ext_resource type="Texture2D" uid="uid://b4vx06m8p6drm" path="res://Assets/Enemies/Drifter/d_hit/Hit 01.png" id="3_r6wdq"]
+[ext_resource type="Texture2D" uid="uid://bk6b4nd0pgvk5" path="res://Assets/Enemies/Drifter/d_hit/Hit 02.png" id="4_nogie"]
+[ext_resource type="Texture2D" uid="uid://bychlns6pcln2" path="res://Assets/Enemies/Drifter/d_hit/Hit 03.png" id="5_gdv8n"]
+[ext_resource type="Texture2D" uid="uid://b2gq42qlrmocm" path="res://Assets/Enemies/Drifter/d_hit/Hit 04.png" id="6_7p2mn"]
+[ext_resource type="Texture2D" uid="uid://bm8irfg10jip0" path="res://Assets/Enemies/Drifter/d_run/Run 01.png" id="7_0hkv8"]
+[ext_resource type="Texture2D" uid="uid://ctpv75bq146rq" path="res://Assets/Enemies/Drifter/d_run/Run 02.png" id="8_aliq0"]
+[ext_resource type="Texture2D" uid="uid://do0ywnebe4cx6" path="res://Assets/Enemies/Drifter/d_run/Run 03.png" id="9_x5cy6"]
+[ext_resource type="Texture2D" uid="uid://crvwsocjmmpu5" path="res://Assets/Enemies/Drifter/d_run/Run 04.png" id="10_trr7q"]
+[ext_resource type="Texture2D" uid="uid://b554my2axd8ll" path="res://Assets/Enemies/Drifter/d_run/Run 05.png" id="11_76kwb"]
+[ext_resource type="Texture2D" uid="uid://c8a504conw8is" path="res://Assets/Enemies/Drifter/d_run/Run 06.png" id="12_3f456"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ndjss"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_oqawo")
+"texture": ExtResource("3_r6wdq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_yis7y")
+"texture": ExtResource("4_nogie")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_ekvno")
+"texture": ExtResource("5_gdv8n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_qaqct")
+"texture": ExtResource("6_7p2mn")
 }],
 "loop": false,
 "name": &"hit",
@@ -35,22 +35,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_ito1s")
+"texture": ExtResource("7_0hkv8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_l276o")
+"texture": ExtResource("8_aliq0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_3a4fr")
+"texture": ExtResource("9_x5cy6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_h8ge3")
+"texture": ExtResource("10_trr7q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_gn4w4")
+"texture": ExtResource("11_76kwb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_7bw1y")
+"texture": ExtResource("12_3f456")
 }],
 "loop": true,
 "name": &"walk",
@@ -330,7 +330,6 @@ speed = 50.0
 sprite_frames = SubResource("SpriteFrames_ndjss")
 animation = &"hit"
 autoplay = "walk"
-frame_progress = 0.0887729
 
 [node name="Sprite2D" type="Sprite2D" parent="." index="1"]
 visible = false
