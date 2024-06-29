@@ -1,15 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://c7v4fggfefk5m"]
+[gd_scene load_steps=4 format=3 uid="uid://c7v4fggfefk5m"]
 
-[ext_resource type="PackedScene" uid="uid://bsa8sgay28e88" path="res://Scenes/Interactables/death_zone.tscn" id="1_vyhrp"]
-[ext_resource type="Texture2D" uid="uid://p2vq88fyvsao" path="res://Assets/Objects/Spikes.png" id="2_23omu"]
+[ext_resource type="Texture2D" uid="uid://p2vq88fyvsao" path="res://NewResources/Palm Tree Island/Sprites/Objects/Spikes/Spikes.png" id="2_23omu"]
+[ext_resource type="PackedScene" path="res://Scenes/Enemies/killzone2.tscn" id="2_kmeri"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atua7"]
+size = Vector2(25, 13)
 
 [node name="Spikes" type="Node2D"]
 
-[node name="DeathZone" parent="." instance=ExtResource("1_vyhrp")]
-visible = false
-position = Vector2(1, 1)
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(2.5, 0.5)
+position = Vector2(2.5, 3.5)
 scale = Vector2(0.78125, 0.78125)
 texture = ExtResource("2_23omu")
+
+[node name="KillZone" parent="." instance=ExtResource("2_kmeri")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
+position = Vector2(4.5, 9.5)
+shape = SubResource("RectangleShape2D_atua7")
