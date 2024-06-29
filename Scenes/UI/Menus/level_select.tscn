@@ -1,21 +1,13 @@
-[gd_scene load_steps=22 format=3 uid="uid://cgtv5qcbp2ity"]
+[gd_scene load_steps=14 format=3 uid="uid://cgtv5qcbp2ity"]
 
 [ext_resource type="Script" path="res://Scenes/UI/Menus/level_select.gd" id="1_uqogl"]
-[ext_resource type="Texture2D" uid="uid://t3vmtet5mmdr" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Board/1.png" id="2_iohju"]
 [ext_resource type="VideoStream" path="res://menuVideo.ogv" id="2_s5br0"]
-[ext_resource type="Texture2D" uid="uid://bbndkq63c28v2" path="res://NewResources/Wood and Paper UI/Sprites/Small Text/Small Icons/1.png" id="2_uobkh"]
-[ext_resource type="Texture2D" uid="uid://cfsrirudfn3v7" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Board/2.png" id="3_nc5y6"]
-[ext_resource type="Texture2D" uid="uid://dt101kgphwcqm" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Board/3.png" id="4_0yufr"]
-[ext_resource type="Texture2D" uid="uid://ct1uymks3v2tb" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Board/4.png" id="5_mj8rj"]
-[ext_resource type="Texture2D" uid="uid://cm1nf70ncvqhs" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Board/5.png" id="6_qr42l"]
-[ext_resource type="Texture2D" uid="uid://bvs35eghk6t4n" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Board/6.png" id="7_rcuhh"]
-[ext_resource type="Texture2D" uid="uid://deccj0kmi6j6f" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Board/7.png" id="8_pgf05"]
-[ext_resource type="Texture2D" uid="uid://dbrnrquu7p1q" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Board/8.png" id="9_7j3gk"]
-[ext_resource type="Texture2D" uid="uid://b0d1yujd77ji8" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Board/9.png" id="10_1red0"]
-[ext_resource type="Texture2D" uid="uid://0vfsntahrmcs" path="res://NewResources/Wood and Paper UI/Sprites/Yellow Button/1.png" id="12_cjv66"]
+[ext_resource type="Texture2D" uid="uid://bbndkq63c28v2" path="res://Assets/UI/LevelUI/Small Text/Small Icons/1.png" id="5_gnf25"]
+[ext_resource type="Texture2D" uid="uid://0vfsntahrmcs" path="res://Assets/UI/LevelUI/Yellow Button/1.png" id="12_87uce"]
 [ext_resource type="Theme" uid="uid://bkxmys60y8ksu" path="res://PirateTheme.tres" id="13_spvxs"]
 [ext_resource type="FontFile" uid="uid://cdp1w0hkk28v7" path="res://Assets/UI/Kenney Thick.ttf" id="14_eplm0"]
-[ext_resource type="Texture2D" uid="uid://3y3gsg0vcsq2" path="res://NewResources/Wood and Paper UI/Sprites/Prefabs/10.png" id="16_ja4u1"]
+[ext_resource type="Texture2D" uid="uid://3y3gsg0vcsq2" path="res://Assets/UI/Prefab/10.png" id="16_p18cd"]
+[ext_resource type="Texture2D" uid="uid://xjrqa562u37g" path="res://Assets/UI/Prefab/6.png" id="18_1s6is"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3figj"]
 
@@ -52,106 +44,61 @@ autoplay = true
 expand = true
 loop = true
 
-[node name="1" type="Sprite2D" parent="."]
-position = Vector2(390, 158)
-scale = Vector2(5, 5)
-texture = ExtResource("2_iohju")
-
-[node name="2" type="Sprite2D" parent="."]
-position = Vector2(549, 158)
-scale = Vector2(5, 5)
-texture = ExtResource("3_nc5y6")
-
-[node name="3" type="Sprite2D" parent="."]
-position = Vector2(708, 158)
-scale = Vector2(5, 5)
-texture = ExtResource("4_0yufr")
-
-[node name="4" type="Sprite2D" parent="."]
-position = Vector2(390, 318)
-scale = Vector2(5, 5)
-texture = ExtResource("5_mj8rj")
-
-[node name="5" type="Sprite2D" parent="."]
-position = Vector2(549, 318)
-scale = Vector2(5, 5)
-texture = ExtResource("6_qr42l")
-
-[node name="6" type="Sprite2D" parent="."]
-position = Vector2(708, 318)
-scale = Vector2(5, 5)
-texture = ExtResource("7_rcuhh")
-
-[node name="7" type="Sprite2D" parent="."]
-position = Vector2(390, 478)
-scale = Vector2(5, 5)
-texture = ExtResource("8_pgf05")
-
-[node name="8" type="Sprite2D" parent="."]
-position = Vector2(550, 478)
-scale = Vector2(5, 5)
-texture = ExtResource("9_7j3gk")
-
-[node name="9" type="Sprite2D" parent="."]
-position = Vector2(708, 478)
-scale = Vector2(5, 5)
-texture = ExtResource("10_1red0")
-
-[node name="10" type="Sprite2D" parent="."]
-position = Vector2(350, 127)
+[node name="19" type="Sprite2D" parent="PanelContainer"]
+position = Vector2(574, 326)
 scale = Vector2(4, 4)
-texture = ExtResource("12_cjv66")
+texture = ExtResource("18_1s6is")
+
+[node name="1" type="Sprite2D" parent="PanelContainer"]
+position = Vector2(356, 110)
+scale = Vector2(4.5, 4.5)
+texture = ExtResource("12_87uce")
 
 [node name="QuitButton" type="Button" parent="."]
 layout_mode = 2
-offset_left = 333.0
-offset_top = 109.0
-offset_right = 367.0
-offset_bottom = 135.0
+offset_left = 339.0
+offset_top = 91.0
+offset_right = 378.0
+offset_bottom = 119.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_3figj")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_b3ado")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_vw4vi")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_4l1lx")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_8hm77")
-icon = ExtResource("2_uobkh")
+icon = ExtResource("5_gnf25")
 expand_icon = true
 
 [node name="11" type="Sprite2D" parent="."]
-position = Vector2(428, 227)
+position = Vector2(431, 231)
 scale = Vector2(4, 4)
-texture = ExtResource("12_cjv66")
+texture = ExtResource("12_87uce")
 
 [node name="12" type="Sprite2D" parent="."]
-position = Vector2(531, 228)
+position = Vector2(551, 231)
 scale = Vector2(4, 4)
-texture = ExtResource("12_cjv66")
+texture = ExtResource("12_87uce")
 
 [node name="13" type="Sprite2D" parent="."]
-position = Vector2(429, 325)
+position = Vector2(432, 329)
 scale = Vector2(4, 4)
-texture = ExtResource("12_cjv66")
+texture = ExtResource("12_87uce")
 
 [node name="14" type="Sprite2D" parent="."]
-position = Vector2(532, 326)
+position = Vector2(552, 329)
 scale = Vector2(4, 4)
-texture = ExtResource("12_cjv66")
+texture = ExtResource("12_87uce")
 
 [node name="15" type="Sprite2D" parent="."]
-position = Vector2(429, 420)
+position = Vector2(432, 424)
 scale = Vector2(4, 4)
-texture = ExtResource("12_cjv66")
-
-[node name="16" type="Sprite2D" parent="."]
-position = Vector2(532, 421)
-scale = Vector2(4, 4)
-texture = ExtResource("12_cjv66")
+texture = ExtResource("12_87uce")
 
 [node name="lv1Button" type="Button" parent="."]
 layout_mode = 2
-offset_left = 412.0
-offset_top = 213.0
-offset_right = 446.0
-offset_bottom = 239.0
+offset_left = 415.0
+offset_top = 217.0
+offset_right = 449.0
+offset_bottom = 243.0
 theme = ExtResource("13_spvxs")
 theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
 theme_override_fonts/font = ExtResource("14_eplm0")
@@ -166,10 +113,10 @@ expand_icon = true
 
 [node name="lv2Button" type="Button" parent="."]
 layout_mode = 2
-offset_left = 515.0
-offset_top = 214.0
-offset_right = 549.0
-offset_bottom = 237.0
+offset_left = 535.0
+offset_top = 217.0
+offset_right = 569.0
+offset_bottom = 240.0
 theme = ExtResource("13_spvxs")
 theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
 theme_override_fonts/font = ExtResource("14_eplm0")
@@ -184,10 +131,10 @@ expand_icon = true
 
 [node name="lv3Button" type="Button" parent="."]
 layout_mode = 2
-offset_left = 413.0
-offset_top = 312.0
-offset_right = 447.0
-offset_bottom = 338.0
+offset_left = 416.0
+offset_top = 316.0
+offset_right = 450.0
+offset_bottom = 342.0
 theme = ExtResource("13_spvxs")
 theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
 theme_override_fonts/font = ExtResource("14_eplm0")
@@ -202,10 +149,10 @@ expand_icon = true
 
 [node name="lv4Button" type="Button" parent="."]
 layout_mode = 2
-offset_left = 516.0
-offset_top = 313.0
-offset_right = 550.0
-offset_bottom = 336.0
+offset_left = 536.0
+offset_top = 316.0
+offset_right = 570.0
+offset_bottom = 339.0
 theme = ExtResource("13_spvxs")
 theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
 theme_override_fonts/font = ExtResource("14_eplm0")
@@ -220,10 +167,10 @@ expand_icon = true
 
 [node name="lv5Button" type="Button" parent="."]
 layout_mode = 2
-offset_left = 412.0
-offset_top = 407.0
-offset_right = 446.0
-offset_bottom = 433.0
+offset_left = 415.0
+offset_top = 411.0
+offset_right = 449.0
+offset_bottom = 437.0
 theme = ExtResource("13_spvxs")
 theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
 theme_override_fonts/font = ExtResource("14_eplm0")
@@ -236,28 +183,10 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_8hm77")
 text = "5"
 expand_icon = true
 
-[node name="lv6Button" type="Button" parent="."]
-layout_mode = 2
-offset_left = 515.0
-offset_top = 408.0
-offset_right = 549.0
-offset_bottom = 431.0
-theme = ExtResource("13_spvxs")
-theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
-theme_override_fonts/font = ExtResource("14_eplm0")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxEmpty_3figj")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_b3ado")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_vw4vi")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_4l1lx")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_8hm77")
-text = "6"
-expand_icon = true
-
-[node name="17" type="Sprite2D" parent="."]
-position = Vector2(737, 320)
-scale = Vector2(6, 4)
-texture = ExtResource("16_ja4u1")
+[node name="10" type="Sprite2D" parent="."]
+position = Vector2(738, 324)
+scale = Vector2(6, 6)
+texture = ExtResource("16_p18cd")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0

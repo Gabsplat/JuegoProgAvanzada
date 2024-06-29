@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://ubm3g25m2mvs"]
 
 [ext_resource type="Script" path="res://Scenes/UI/level_ui.gd" id="1_0wvi5"]
+[ext_resource type="Texture2D" uid="uid://bqotiecsqqqre" path="res://Assets/UI/LevelUI/Life Bars/Big Bars/1.png" id="2_i0drn"]
 [ext_resource type="Texture2D" uid="uid://pgvp75401bfx" path="res://Assets/UI/hud_heartFull.png" id="2_s3qdv"]
+[ext_resource type="Texture2D" uid="uid://cdwjuo83msltc" path="res://Assets/UI/LevelUI/Life Bars/Big Bars/3.png" id="3_1froh"]
 [ext_resource type="Theme" uid="uid://dxortrvrvcbys" path="res://Scenes/UI/score.tres" id="3_gqkha"]
-[ext_resource type="Texture2D" uid="uid://bqotiecsqqqre" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Big Bars/1.png" id="4_c1gdp"]
-[ext_resource type="Texture2D" uid="uid://cdwjuo83msltc" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Big Bars/3.png" id="5_55ilp"]
-[ext_resource type="Texture2D" uid="uid://d3nv3hr8oknap" path="res://NewResources/Wood and Paper UI/Sprites/Prefabs/1.png" id="6_0jmi4"]
-[ext_resource type="Texture2D" uid="uid://boy5qewryqr8u" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Big Bars/4.png" id="6_7t0hb"]
-[ext_resource type="Texture2D" uid="uid://blc6catlkw7k6" path="res://NewResources/Wood and Paper UI/Sprites/Life Bars/Colors/1.png" id="7_wbtj4"]
-[ext_resource type="Texture2D" uid="uid://d283u7uux15v" path="res://NewResources/Wood and Paper UI/Sprites/Prefabs/7.png" id="8_jyyhm"]
+[ext_resource type="Texture2D" uid="uid://boy5qewryqr8u" path="res://Assets/UI/LevelUI/Life Bars/Big Bars/4.png" id="4_fms0c"]
+[ext_resource type="Texture2D" uid="uid://blc6catlkw7k6" path="res://Assets/UI/LevelUI/Life Bars/Colors/1.png" id="5_aubxc"]
+[ext_resource type="Texture2D" uid="uid://d3nv3hr8oknap" path="res://Assets/UI/Prefab/1.png" id="7_uarfc"]
+[ext_resource type="Texture2D" uid="uid://d283u7uux15v" path="res://Assets/UI/Prefab/7.png" id="8_g3la0"]
 
 [node name="LevelUI" type="CanvasLayer"]
 script = ExtResource("1_0wvi5")
@@ -16,22 +16,22 @@ script = ExtResource("1_0wvi5")
 [node name="HeartBar" type="Sprite2D" parent="."]
 position = Vector2(106, 84)
 scale = Vector2(4, 4)
-texture = ExtResource("4_c1gdp")
+texture = ExtResource("2_i0drn")
 
 [node name="4" type="Sprite2D" parent="."]
 position = Vector2(232, 84)
 scale = Vector2(4, 4)
-texture = ExtResource("5_55ilp")
+texture = ExtResource("3_1froh")
 
 [node name="6" type="Sprite2D" parent="."]
 position = Vector2(318, 84)
 scale = Vector2(4, 4)
-texture = ExtResource("5_55ilp")
+texture = ExtResource("3_1froh")
 
 [node name="5" type="Sprite2D" parent="."]
 position = Vector2(445, 84)
 scale = Vector2(4, 4)
-texture = ExtResource("6_7t0hb")
+texture = ExtResource("4_fms0c")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -52,17 +52,17 @@ theme_override_constants/separation = 0
 
 [node name="Health2" type="TextureRect" parent="Control/HBoxContainer2"]
 layout_mode = 2
-texture = ExtResource("7_wbtj4")
+texture = ExtResource("5_aubxc")
 stretch_mode = 5
 
 [node name="Health3" type="TextureRect" parent="Control/HBoxContainer2"]
 layout_mode = 2
-texture = ExtResource("7_wbtj4")
+texture = ExtResource("5_aubxc")
 stretch_mode = 5
 
 [node name="Health4" type="TextureRect" parent="Control/HBoxContainer2"]
 layout_mode = 2
-texture = ExtResource("7_wbtj4")
+texture = ExtResource("5_aubxc")
 stretch_mode = 5
 
 [node name="LabelPuntos" type="Label" parent="Control"]
@@ -94,24 +94,24 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="2" type="Sprite2D" parent="Control"]
-position = Vector2(1090, 87)
-scale = Vector2(2, 2)
-texture = ExtResource("6_0jmi4")
+position = Vector2(1091.5, 87)
+scale = Vector2(2.23437, 2)
+texture = ExtResource("7_uarfc")
 
 [node name="8" type="Sprite2D" parent="Control"]
-position = Vector2(1090, 88)
-scale = Vector2(2, 2)
-texture = ExtResource("8_jyyhm")
+position = Vector2(1092, 88)
+scale = Vector2(2.3125, 2)
+texture = ExtResource("8_g3la0")
 
 [node name="3" type="Sprite2D" parent="Control"]
 position = Vector2(899, 87)
 scale = Vector2(2, 2)
-texture = ExtResource("6_0jmi4")
+texture = ExtResource("7_uarfc")
 
 [node name="9" type="Sprite2D" parent="Control"]
 position = Vector2(899, 88)
 scale = Vector2(2, 2)
-texture = ExtResource("8_jyyhm")
+texture = ExtResource("8_g3la0")
 
 [node name="Score" type="Label" parent="Control"]
 layout_mode = 2
@@ -136,7 +136,7 @@ offset_bottom = 123.0
 size_flags_vertical = 3
 theme = ExtResource("3_gqkha")
 theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 15
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
