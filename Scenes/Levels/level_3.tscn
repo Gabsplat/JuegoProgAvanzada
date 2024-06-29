@@ -2728,7 +2728,7 @@ sources/4 = SubResource("TileSetAtlasSource_ox6wr")
 size = Vector2(344.996, 27.5734)
 
 [node name="Level3" type="Node2D"]
-position = Vector2(0, -4)
+position = Vector2(-42, -452)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(91, 12)

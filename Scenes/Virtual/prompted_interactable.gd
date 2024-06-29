@@ -1,12 +1,12 @@
 @tool
 extends Interactable
 
-var prompt_action := "interact":
+var prompt_action := "E":
 	set(value):
 		prompt_action = value
 		gen_prompt_string()
 
-@onready var prompt_string_base := "Press {prompt} to interact"
+@onready var prompt_string_base := "Presiona {prompt} para interactuar!"
 
 @onready var label : Label = $Prompt/Label
 

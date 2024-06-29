@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7v4fggfefk5m"]
+
+[ext_resource type="PackedScene" uid="uid://bsa8sgay28e88" path="res://Scenes/Interactables/death_zone.tscn" id="1_vyhrp"]
+[ext_resource type="Texture2D" uid="uid://p2vq88fyvsao" path="res://Assets/Objects/Spikes.png" id="2_23omu"]
+
+[node name="Spikes" type="Node2D"]
+
+[node name="DeathZone" parent="." instance=ExtResource("1_vyhrp")]
+visible = false
+position = Vector2(1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.5, 0.5)
+scale = Vector2(0.78125, 0.78125)
+texture = ExtResource("2_23omu")
