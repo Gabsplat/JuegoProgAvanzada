@@ -1,11 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://be5yk5cr062tx"]
+[gd_scene load_steps=12 format=3 uid="uid://y38ugbb2djni"]
 
 [ext_resource type="PackedScene" uid="uid://dk6a56e3n3mbc" path="res://Scenes/Player/player.tscn" id="1_7vva3"]
 [ext_resource type="Texture2D" uid="uid://b4pd6lxrch448" path="res://Assets/Tiles/world_tileset.png" id="1_a30e3"]
 [ext_resource type="Texture2D" uid="uid://c2rc6cw1y1p2b" path="res://Assets/Tiles/items_spritesheet.png" id="2_rv8sd"]
 [ext_resource type="PackedScene" uid="uid://b6n2e6kkf0hqu" path="res://Scenes/Enemies/crawler_enemy.tscn" id="5_x1gcv"]
 [ext_resource type="PackedScene" uid="uid://bhgdgjy2jxwjs" path="res://Scenes/Enemies/flyer_enemy.tscn" id="6_irrih"]
-[ext_resource type="PackedScene" path="res://Scenes/Enemies/killzone2.tscn" id="6_wvtu1"]
+[ext_resource type="PackedScene" uid="uid://b1y7osgsjsr41" path="res://Scenes/Enemies/killzone2.tscn" id="6_wvtu1"]
 [ext_resource type="PackedScene" uid="uid://boic0ihw3y8wu" path="res://Scenes/Interactables/exit.tscn" id="7_jhb5q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ucary"]
@@ -2728,7 +2728,7 @@ sources/4 = SubResource("TileSetAtlasSource_ox6wr")
 size = Vector2(344.996, 27.5734)
 
 [node name="Level3" type="Node2D"]
-position = Vector2(0, -4)
+position = Vector2(-42, -452)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(91, 12)
