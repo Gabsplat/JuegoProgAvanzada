@@ -2728,7 +2728,7 @@ sources/4 = SubResource("TileSetAtlasSource_ox6wr")
 size = Vector2(344.996, 27.5734)
 
 [node name="Level3" type="Node2D"]
-position = Vector2(-42, -452)
+position = Vector2(-50, -455)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(91, 12)
@@ -2752,7 +2752,7 @@ position = Vector2(1367, 601)
 position = Vector2(1670, 271)
 
 [node name="KillZone" parent="." instance=ExtResource("6_wvtu1")]
-position = Vector2(631, 621)
+position = Vector2(676, 620)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
 position = Vector2(67, 2.37024)
