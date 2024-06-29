@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c7v4fggfefk5m"]
 
 [ext_resource type="Texture2D" uid="uid://p2vq88fyvsao" path="res://Assets/Objects/Spikes.png" id="1_iuqnb"]
-[ext_resource type="PackedScene" path="res://Scenes/Enemies/killzone2.tscn" id="2_kmeri"]
+[ext_resource type="PackedScene" uid="uid://b1y7osgsjsr41" path="res://Scenes/Enemies/killzone2.tscn" id="2_kmeri"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_atua7"]
 size = Vector2(25, 13)

@@ -28,9 +28,9 @@ func lose_health():
 	if current_heart_index >= 0:
 		hearts[current_heart_index].modulate = Color(1, 1, 1, 0.25)
 		current_heart_index -= 1
-		print(current_heart_index)
 		if current_heart_index < 0:
 			heartBar.texture = deathBar
+			
 
 func update_score(new_score):
 	scoreContainer.text = str(new_score)

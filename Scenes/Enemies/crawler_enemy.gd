@@ -1,7 +1,5 @@
 extends Enemy
 
-
-# Get the gravity from the project settings to be synced with RigidBody nodes.
 var facing_right = true
 
 @onready var anim = $AnimatedSprite2D
@@ -23,7 +21,6 @@ func handle_flip():
 		flipped = true
 	if not $Marker2D/FloorCast.is_colliding() and is_on_floor():
 		flipped = true
-	
 	if flipped:
 		flip()
 
@@ -38,18 +35,11 @@ func flip():
 
 func _on_hit_body(body):
 	print(body)
-	pass # Replace with function body.
 
 
 func _on_hitbox_area_entered(area):
 	if area.is_in_group("sword"):
 		health -= 1
 		var animsList = $AnimationPlayer.get_queue()
-		for item in animsList:
-			print("Item: " + item)
-			
-		#anim.play("hit")
-		#$AnimationPlayer.play("FlipLeft")
 		if(health == 0):
 			$".".queue_free()
-	pass # Replace with function body.

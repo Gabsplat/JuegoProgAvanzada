@@ -14,14 +14,11 @@ var player : Player
 
 var current_checkpoint:Checkpoint
 
-
 signal level_ended
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	var cell_size :Vector2i = $TileMap.tile_set.tile_size
 	boundry_rect = Rect2i($TileMap.get_used_rect()).abs()
-#	boundry_rect = boundry_rect.grow_side(SIDE_TOP, 500)
 	boundry_rect.size *= cell_size
 	boundry_rect.position *= cell_size
 	after_ready.call_deferred()
@@ -30,10 +27,7 @@ func _process(delta):
 	time_taken += delta
 	ui.update_time(time_taken)
 	
-
 func after_ready():
-	#As the player is added to the tilemap, it needs to wait a frame for 
-	#everything to get ready!
 	player.set_up_camera_limit(boundry_rect)
 	starting_pos = player.position
 
@@ -68,9 +62,11 @@ func activate_checkpoint(node):
 	current_checkpoint.active = true
 
 func kill_player():
+	ui.full_health()
 	respawn.call_deferred()
 
-func respawn():	
+func respawn():
+	ui.full_health()
 	player.queue_free()
 	player = player_scene.instantiate()
 	$TileMap.add_child(player)
@@ -86,22 +82,20 @@ func respawn():
 	
 
 func _on_tile_map_child_entered_tree(node):
-	# Handle the noeds that are instanced by the tile map.
-	# Potential change - Have them added to the test level instead?
-	
 	if node.is_in_group("interactable"):
 		node.player_touched.connect(on_player_touched.bind(node))
 	if node.is_in_group("player"):
 		player = node as Player
 		player.player_lost_health.connect(_on_player_lost_health)
 		player.player_lost_all_health.connect(death)
+		ui.full_health()
 	if node.is_in_group("actor"):
 		node = node as Actor
 		node.hit_body.connect(_on_hit_body.bind(node))
 
 func death():
-	respawn()
 	ui.full_health()
+	respawn.call_deferred()
 
 func _on_hit_body(hitbody:Actor, hitter:Actor):
 	hitbody.take_hit(hitter) 

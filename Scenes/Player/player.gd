@@ -5,14 +5,10 @@ class_name Player
 @export var jump_time_frames = 6;
 
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
-
-#Taken from Kids Can Code - https://kidscancode.org/godot_recipes/4.x/2d/platform_character/index.html
-
 @onready var camera :Camera2D = $Camera2D 
 
 @export_range(0.0, 1.0) var friction = 0.1
 @export_range(0.0 , 1.0) var acceleration = 0.25
-
 
 var health = 3
 
@@ -21,12 +17,8 @@ var isAttacking = false
 var isGettingHurt = false
 
 #Coyote code based on KIDS CAN CODE
-#https://kidscancode.org/godot_recipes/4.x/2d/coyote_time/index.html
-
 var coyote_frames = 30 # How many in-air frames to allow jumping
 var coyote = false  # Track whether we're in coyote time or not
-
-
 
 signal player_lost_health(new_health)
 signal player_lost_all_health
@@ -113,7 +105,6 @@ func take_hit(hitter):
 		player_lost_all_health.emit()
 
 func set_up_camera_limit(rect:Rect2i):
-	print(rect)
 	rect = rect.abs()
 	camera.limit_left = rect.position.x 
 	camera.limit_top = rect.position.y
@@ -125,24 +116,17 @@ func _on_coyote_timer_timeout():
 	pass # Replace with function body.
 
 func react_to_hitting(_hitbody):
-	# Have the player jump
-	print("auch")
 	anim.play("hurt")
 	isGettingHurt = true
 	velocity.y = jump_vel
 	jumping = true
 
-
-
-
 func _on_animated_sprite_2d_animation_finished():
-	print("anim finished: " + anim.animation)
 	if anim.animation == "attack":
 		$Attack/CollisionShape2D.disabled = true
 		isAttacking = false
 	if anim.animation == "hurt":
 		isGettingHurt = false
-
 
 func _on_animated_sprite_2d_animation_changed():
 	pass # Replace with function body.
