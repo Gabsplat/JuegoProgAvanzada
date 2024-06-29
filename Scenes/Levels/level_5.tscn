@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://duk28wqgus3n6"]
+[gd_scene load_steps=14 format=3 uid="uid://hh2g3v3yoogh"]
 
 [ext_resource type="Texture2D" uid="uid://cowsdnrvgkfje" path="res://Assets/Tiles/basic_tile_sheet.png" id="1_ijdfg"]
 [ext_resource type="Texture2D" uid="uid://b4pd6lxrch448" path="res://Assets/Tiles/world_tileset.png" id="2_34jbv"]
@@ -13713,6 +13713,3 @@ layer_0/tile_data = PackedInt32Array(-9, 65537, 0, -65545, 65537, 0, -65544, 655
 
 [node name="Player" parent="." instance=ExtResource("7_u4sk1")]
 position = Vector2(-123, -61)
-
-[connection signal="hit_body" from="TileMap/CrawlerEnemy" to="TileMap/CrawlerEnemy" method="_on_hit_body"]
-[connection signal="hit_body" from="TileMap/@CharacterBody2D@36116" to="TileMap/@CharacterBody2D@36116" method="_on_hit_body"]

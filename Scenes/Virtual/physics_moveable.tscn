@@ -3,10 +3,11 @@
 [ext_resource type="Script" path="res://Scenes/Virtual/physics_moveable.gd" id="1_ecerp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bwq54"]
-size = Vector2(70, 70)
+size = Vector2(23, 25)
 
 [node name="PhysicsMoveable" type="RigidBody2D"]
 script = ExtResource("1_ecerp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_bwq54")

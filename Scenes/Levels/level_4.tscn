@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cmkw0bkkwtqu2"]
+[gd_scene load_steps=5 format=3 uid="uid://v0jkvl0ql3a1"]
 
 [ext_resource type="PackedScene" uid="uid://vsxauni78yw6" path="res://Scenes/Virtual/BaseLevel.tscn" id="1_pktcv"]
 [ext_resource type="AudioStream" uid="uid://dd78xmvmtobl0" path="res://Assets/Music/Aventuras de 8 Bits.mp3" id="2_5qejo"]
-[ext_resource type="PackedScene" path="res://Scenes/Background.tscn" id="2_u30d6"]
+[ext_resource type="PackedScene" uid="uid://dmij6dvb88pgy" path="res://Scenes/Background.tscn" id="2_u30d6"]
 [ext_resource type="Texture2D" uid="uid://lr31lm8du7do" path="res://NewResources/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Right 03.png" id="3_sivby"]
 
 [node name="TestLevel" instance=ExtResource("1_pktcv")]
@@ -21,13 +21,3 @@ position = Vector2(263, 160)
 texture = ExtResource("3_sivby")
 
 [connection signal="changed" from="TileMap" to="." method="_on_tile_map_changed"]
-[connection signal="body_entered" from="TileMap/Exit" to="TileMap/Exit" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@139354" to="TileMap/@Area2D@139354" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@139355" to="TileMap/@Area2D@139355" method="_on_body_entered"]
-[connection signal="hit_body" from="TileMap/CrawlerEnemy" to="TileMap/CrawlerEnemy" method="_on_hit_body"]
-[connection signal="body_entered" from="TileMap/Collectable" to="TileMap/Collectable" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@139356" to="TileMap/@Area2D@139356" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@139357" to="TileMap/@Area2D@139357" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@139358" to="TileMap/@Area2D@139358" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@139867" to="TileMap/@Area2D@139867" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@139868" to="TileMap/@Area2D@139868" method="_on_body_entered"]
