@@ -1,29 +1,28 @@
-[gd_scene load_steps=32 format=3 uid="uid://dk6a56e3n3mbc"]
+[gd_scene load_steps=31 format=3 uid="uid://dk6a56e3n3mbc"]
 
 [ext_resource type="PackedScene" uid="uid://cupi7qpibwqb1" path="res://Scenes/Virtual/actor.tscn" id="1_xtkr7"]
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="2_5gwpl"]
-[ext_resource type="Texture2D" uid="uid://cv4moerkih7ew" path="res://Assets/Player/p_idle/Idle Sword 01.png" id="3_yg7ua"]
-[ext_resource type="Texture2D" uid="uid://b7g0i6jsy4ic5" path="res://NewResources/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/15-Attack 1/Attack 1 01.png" id="3_yhn1p"]
-[ext_resource type="Texture2D" uid="uid://conenwmy5ffqd" path="res://Assets/Player/p_idle/Idle Sword 02.png" id="4_8ujq8"]
-[ext_resource type="Texture2D" uid="uid://vpcnq2s0fbqi" path="res://NewResources/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/15-Attack 1/Attack 1 02.png" id="4_088wc"]
-[ext_resource type="Texture2D" uid="uid://d045y6mqgruqx" path="res://Assets/Player/p_jump/Jump Sword 01.png" id="5_4myi8"]
-[ext_resource type="Texture2D" uid="uid://b2etryqltgd4x" path="res://NewResources/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/15-Attack 1/Attack 1 03.png" id="5_en21j"]
-[ext_resource type="Texture2D" uid="uid://fwr1g5mivh" path="res://Assets/Player/p_idle/Idle Sword 03.png" id="5_qh7rp"]
-[ext_resource type="Texture2D" uid="uid://c3cmck3mfudve" path="res://Assets/Player/p_run/Run Sword 01.png" id="6_3kslc"]
-[ext_resource type="Texture2D" uid="uid://dxfkdquiwud0k" path="res://Assets/Player/p_idle/Idle Sword 04.png" id="6_8qkld"]
-[ext_resource type="Texture2D" uid="uid://b13ajmrupd2tv" path="res://Assets/Player/p_jump/Jump Sword 02.png" id="6_ic80b"]
-[ext_resource type="Texture2D" uid="uid://4nixvr18gi8b" path="res://Assets/Player/p_idle/Idle Sword 05.png" id="7_8qotv"]
-[ext_resource type="Texture2D" uid="uid://dxn3r18igdhnn" path="res://Assets/Player/p_jump/Jump Sword 03.png" id="7_rki6x"]
-[ext_resource type="Texture2D" uid="uid://cu7rpaorw8lmx" path="res://Assets/Player/p_run/Run Sword 02.png" id="7_w27jg"]
+[ext_resource type="Texture2D" uid="uid://b7g0i6jsy4ic5" path="res://Assets/Player/p_attack/Attack 1 01.png" id="3_tmgo4"]
+[ext_resource type="Texture2D" uid="uid://vpcnq2s0fbqi" path="res://Assets/Player/p_attack/Attack 1 02.png" id="4_7isfx"]
+[ext_resource type="Texture2D" uid="uid://b2etryqltgd4x" path="res://Assets/Player/p_attack/Attack 1 03.png" id="5_4kn2l"]
+[ext_resource type="Texture2D" uid="uid://cv4moerkih7ew" path="res://Assets/Player/p_idle/Idle Sword 01.png" id="6_krf1c"]
+[ext_resource type="Texture2D" uid="uid://conenwmy5ffqd" path="res://Assets/Player/p_idle/Idle Sword 02.png" id="7_uuo7l"]
 [ext_resource type="Texture2D" uid="uid://4w38nq82xi77" path="res://Assets/Player/p_fall.png" id="8_41rss"]
-[ext_resource type="Texture2D" uid="uid://bcg8qhx0uuobm" path="res://Assets/Player/p_run/Run Sword 03.png" id="8_tdbqh"]
-[ext_resource type="Texture2D" uid="uid://cghbr6t35xfcy" path="res://NewResources/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 01.png" id="9_bon0q"]
-[ext_resource type="Texture2D" uid="uid://crytucqtb72sa" path="res://Assets/Player/p_run/Run Sword 04.png" id="9_omarb"]
-[ext_resource type="Texture2D" uid="uid://cuy3hej0m8fmh" path="res://Assets/Player/p_run/Run Sword 05.png" id="10_c5k2j"]
-[ext_resource type="Texture2D" uid="uid://byn640luw2rcm" path="res://NewResources/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 02.png" id="10_pewxf"]
-[ext_resource type="Texture2D" uid="uid://cjghijuu1of3n" path="res://NewResources/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/10-Run Sword/Run Sword 06.png" id="11_6ej68"]
-[ext_resource type="Texture2D" uid="uid://bip1i2w03uef7" path="res://NewResources/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 03.png" id="11_hkiym"]
-[ext_resource type="Texture2D" uid="uid://bek0q1u02ej0p" path="res://NewResources/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 04.png" id="12_nq0df"]
+[ext_resource type="Texture2D" uid="uid://fwr1g5mivh" path="res://Assets/Player/p_idle/Idle Sword 03.png" id="8_yi1e7"]
+[ext_resource type="Texture2D" uid="uid://dxfkdquiwud0k" path="res://Assets/Player/p_idle/Idle Sword 04.png" id="9_h8eqv"]
+[ext_resource type="Texture2D" uid="uid://4nixvr18gi8b" path="res://Assets/Player/p_idle/Idle Sword 05.png" id="10_8in13"]
+[ext_resource type="Texture2D" uid="uid://cghbr6t35xfcy" path="res://Assets/Player/p_hurt/Hit Sword 01.png" id="12_bvnhc"]
+[ext_resource type="Texture2D" uid="uid://byn640luw2rcm" path="res://Assets/Player/p_hurt/Hit Sword 02.png" id="13_16yjt"]
+[ext_resource type="Texture2D" uid="uid://bip1i2w03uef7" path="res://Assets/Player/p_hurt/Hit Sword 03.png" id="14_o2j67"]
+[ext_resource type="Texture2D" uid="uid://bek0q1u02ej0p" path="res://Assets/Player/p_hurt/Hit Sword 04.png" id="15_fues5"]
+[ext_resource type="Texture2D" uid="uid://d045y6mqgruqx" path="res://Assets/Player/p_jump/Jump Sword 01.png" id="16_c0yo5"]
+[ext_resource type="Texture2D" uid="uid://b13ajmrupd2tv" path="res://Assets/Player/p_jump/Jump Sword 02.png" id="17_qngnj"]
+[ext_resource type="Texture2D" uid="uid://dxn3r18igdhnn" path="res://Assets/Player/p_jump/Jump Sword 03.png" id="18_3hj2a"]
+[ext_resource type="Texture2D" uid="uid://cu7rpaorw8lmx" path="res://Assets/Player/p_run/Run Sword 02.png" id="19_1pv8x"]
+[ext_resource type="Texture2D" uid="uid://bcg8qhx0uuobm" path="res://Assets/Player/p_run/Run Sword 03.png" id="20_hsscw"]
+[ext_resource type="Texture2D" uid="uid://crytucqtb72sa" path="res://Assets/Player/p_run/Run Sword 04.png" id="21_a5fqn"]
+[ext_resource type="Texture2D" uid="uid://cuy3hej0m8fmh" path="res://Assets/Player/p_run/Run Sword 05.png" id="22_3xt32"]
+[ext_resource type="Texture2D" uid="uid://cjghijuu1of3n" path="res://Assets/Player/p_run/Run Sword 06.png" id="23_wwjj4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jbkd8"]
 size = Vector2(18, 27)
@@ -32,13 +31,13 @@ size = Vector2(18, 27)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_yhn1p")
+"texture": ExtResource("3_tmgo4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_088wc")
+"texture": ExtResource("4_7isfx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_en21j")
+"texture": ExtResource("5_4kn2l")
 }],
 "loop": false,
 "name": &"attack",
@@ -46,19 +45,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_yg7ua")
+"texture": ExtResource("6_krf1c")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_8ujq8")
+"texture": ExtResource("7_uuo7l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_qh7rp")
+"texture": ExtResource("8_yi1e7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_8qkld")
+"texture": ExtResource("9_h8eqv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_8qotv")
+"texture": ExtResource("10_8in13")
 }],
 "loop": true,
 "name": &"default",
@@ -74,16 +73,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_bon0q")
+"texture": ExtResource("12_bvnhc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_pewxf")
+"texture": ExtResource("13_16yjt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_hkiym")
+"texture": ExtResource("14_o2j67")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_nq0df")
+"texture": ExtResource("15_fues5")
 }],
 "loop": false,
 "name": &"hurt",
@@ -91,13 +90,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_4myi8")
+"texture": ExtResource("16_c0yo5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_ic80b")
+"texture": ExtResource("17_qngnj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_rki6x")
+"texture": ExtResource("18_3hj2a")
 }],
 "loop": false,
 "name": &"jump",
@@ -105,22 +104,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_3kslc")
+"texture": ExtResource("19_1pv8x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_w27jg")
+"texture": ExtResource("20_hsscw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_tdbqh")
+"texture": ExtResource("21_a5fqn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_omarb")
+"texture": ExtResource("22_3xt32")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_c5k2j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_6ej68")
+"texture": ExtResource("23_wwjj4")
 }],
 "loop": true,
 "name": &"walk",
@@ -162,7 +158,7 @@ shape = SubResource("RectangleShape2D_jbkd8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_dkb7f")
-animation = &"hurt"
+animation = &"attack"
 autoplay = "default"
 
 [node name="Camera2D" type="Camera2D" parent="." index="2"]

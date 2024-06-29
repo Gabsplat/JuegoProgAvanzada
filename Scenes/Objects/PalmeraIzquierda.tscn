@@ -1,24 +1,24 @@
-[gd_scene load_steps=6 format=3 uid="uid://cotrat8att5c7"]
+[gd_scene load_steps=6 format=3 uid="uid://ccwmruij0t5rt"]
 
-[ext_resource type="Texture2D" uid="uid://42mirj7wvn16" path="res://NewResources/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Left 01.png" id="1_n8f04"]
-[ext_resource type="Texture2D" uid="uid://bdohwt0ydxwu1" path="res://NewResources/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Left 02.png" id="2_3fwqd"]
-[ext_resource type="Texture2D" uid="uid://cjwamynwm2qsv" path="res://NewResources/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Left 03.png" id="3_3uj6k"]
-[ext_resource type="Texture2D" uid="uid://bugfs1caaxmyo" path="res://NewResources/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Left 04.png" id="4_ojlj5"]
+[ext_resource type="Texture2D" path="res://Assets/Objects/Palmera/Back Palm Tree Left 01.png" id="1_s6mlx"]
+[ext_resource type="Texture2D" path="res://Assets/Objects/Palmera/Back Palm Tree Left 02.png" id="2_yu0lv"]
+[ext_resource type="Texture2D" path="res://Assets/Objects/Palmera/Back Palm Tree Left 03.png" id="3_y050y"]
+[ext_resource type="Texture2D" path="res://Assets/Objects/Palmera/Back Palm Tree Left 04.png" id="4_8447o"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4s4dg"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_n8f04")
+"texture": ExtResource("1_s6mlx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_3fwqd")
+"texture": ExtResource("2_yu0lv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_3uj6k")
+"texture": ExtResource("3_y050y")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_ojlj5")
+"texture": ExtResource("4_8447o")
 }],
 "loop": true,
 "name": &"default",
