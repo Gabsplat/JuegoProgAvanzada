@@ -44,7 +44,7 @@ shape = SubResource("CircleShape2D_hbwna")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="3"]
 sprite_frames = SubResource("SpriteFrames_8j2mf")
-frame_progress = 0.70243
+frame_progress = 0.520755
 
 [node name="TargetRange" type="Area2D" parent="." index="4"]
 visible = false
