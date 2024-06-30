@@ -1,75 +1,32 @@
+# Platformer en Godot 4.2.2 
 
 <p align="center"><img src="Marketing/Logo.png"/></p>
 
-This template is designed to help users create 2D platformers in Godot quickly and easily using the improved Tilemap system of Godot 4, 
-especially the ability to place scenes. The goal is for this to be both a beginner-friendly template to support new developers or
-those who aren't too comfortable with coding while also providing a base for more experienced developers who want to quickly create
-a fairly large project, say for a Gamejam. 
+Este template está diseñado para ayudar a los usuarios a crear juegos de plataformas 2D en Godot 4.2.2 de manera rápida y sencilla, utilizando el sistema mejorado de Tilemap, especialmente la capacidad de colocar escenas. El objetivo es que sea un template amigable para principiantes, para apoyar a nuevos desarrolladores o aquellos que no se sientan demasiado cómodos con la programación, y al mismo tiempo proporcionar una base para desarrolladores más experimentados que quieran crear rápidamente un proyecto bastante grande. Este juego está ambientado con una temática pirata, ofreciendo una experiencia de aventura y exploración en alta mar.
 
 <p align="center"><img src="Screenshots/SPT 1.png"/></p>
 
-### Credits
+## Créditos
+Assets de Treasure Hunters - <https://pixelfrog-assets.itch.io/treasure-hunters>
 
-Assets from Kenney Game Assets - <https://www.kenney.nl/assets/platformer-art-deluxe>
+## Inlcuye
+- Nivel base
+- Enemigo base
+  - Crawler 
+- Interactuables
+  - Salida
+  - Monedas coleccionables
+  - Zonas de muerte
+- Player con movientos base
+  - Salto que interactua con el suelo (capacidad de modificar tiempo post suelo para saltar)
+    - El salto depende de cuanto tiempo se presione
+- Colisiones entre el Player y los enemigos
+- UI básica con el estilo de piratas
+- Un selector de niveles
 
-Coyote Time taken from Kids Can Code - <https://kidscancode.org/godot_recipes/4.x/2d/coyote_time/index.html>
+## Como instalar
+Clonar el repo con git clone o descargar el .zip.
+Importar y abrir en godot
 
-### Includes
-
-- Base Level
-- Base Enemy
-  - Crawler Enemy
-  - **NEW** Flying Enemy
-- Interactables
-  - Level Exit
-  - Collectables
-  - Death Zones
-  - **NEW** Crate
-- Player with basic movement including:
-  - Coyote Frames
-  - Jump Buffer
-  - Jump height depends on how long you press jump for
-- Collisions between Enemies and Player
-- Basic UI
-
-### How To Install
-
-Simply download, extract and open in Godot. You can try out the test levels or simply begin creating!
-
-### How To Create A Level
-
-#### Step 1
-
-![](Screenshots/SPT_NEW_LEVEL_1.png "image title")
-
-Click on "New Scene From Inherited"
-
-#### Step 2
-
-![](Screenshots/SPT_NEW_LEVEL_2.png "image title")
-
-Choose "Base Level" as your base scene
-
-#### Step 3
-
-![](Screenshots/SPT_NEW_LEVEL_3.png "image title")
-
-Click on the tile map, and begin to add the tiles to your level
-
-#### Step 4
-
-![](Screenshots/SPT_NEW_LEVEL_4.png "image title")
-
-Click on the Tiles Scene Collection, and begin to add in the extra scenes. 
-Make sure to add a player and a level exit!
-
-#### Step 5
-
-![image](https://github.com/GreenCloversGames/Scalable-Platformer-Template/assets/98714227/1b5351af-f2aa-48ed-9b85-637029f45364)
-
-To add your levels to the level select, as well as order your levels, you need to edit the "level_collection.tres" resource, which contains the resource of your level. In the future, you will be able to find this in the main scene inspector, but for now you can access it from the file handler. Once you have it, you can add "MetaLevelResource"s, which contain the name of the level, the scene and level data. 
-
-### How To Make It Your Own
-
-You can simply edit the assets as you need to! Change the tile set of the base level, or change the character art of the player!
-
+> [!WARNING]
+> Este proyecto fue desarrollado con Godot 4.2.2

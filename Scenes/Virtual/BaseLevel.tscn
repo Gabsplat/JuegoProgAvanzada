@@ -1,15 +1,15 @@
-[gd_scene load_steps=22 format=3 uid="uid://vsxauni78yw6"]
+[gd_scene load_steps=24 format=3 uid="uid://vsxauni78yw6"]
 
 [ext_resource type="Script" path="res://Scenes/Virtual/BaseLevel.gd" id="1_gi0ax"]
 [ext_resource type="PackedScene" uid="uid://dk6a56e3n3mbc" path="res://Scenes/Player/player.tscn" id="2_2wr2r"]
 [ext_resource type="PackedScene" uid="uid://boic0ihw3y8wu" path="res://Scenes/Interactables/exit.tscn" id="3_24241"]
 [ext_resource type="PackedScene" uid="uid://cm7vpknfgcqx7" path="res://Scenes/Objects/PalmeraDerecha.tscn" id="3_repav"]
 [ext_resource type="PackedScene" uid="uid://c3twulfk4bms2" path="res://Scenes/Objects/Palmera.tscn" id="4_scytg"]
-[ext_resource type="PackedScene" uid="uid://b1bgsf2xm6mv4" path="res://Scenes/Objects/Spike.tscn" id="5_6ry62"]
 [ext_resource type="PackedScene" uid="uid://de5utrueqtaqj" path="res://Scenes/Interactables/checkpoint.tscn" id="5_t4l8f"]
+[ext_resource type="Texture2D" uid="uid://dyoxu3u7x8xbk" path="res://Assets/Tiles/island_tile_sheet.png" id="5_y6e5y"]
 [ext_resource type="PackedScene" uid="uid://b6n2e6kkf0hqu" path="res://Scenes/Enemies/crawler_enemy.tscn" id="6_3c4nd"]
 [ext_resource type="PackedScene" uid="uid://c1bq0xi4a0k6s" path="res://Scenes/Interactables/collectable.tscn" id="6_nawf6"]
-[ext_resource type="PackedScene" uid="uid://bsa8sgay28e88" path="res://Scenes/Interactables/death_zone.tscn" id="7_0fme4"]
+[ext_resource type="PackedScene" uid="uid://bpf3ilhbh57wg" path="res://Scenes/Interactables/death_zone.tscn" id="7_0fme4"]
 [ext_resource type="PackedScene" uid="uid://cih0knhrxl1pe" path="res://Scenes/Virtual/prompted_interactable.tscn" id="8_jfjs7"]
 [ext_resource type="PackedScene" uid="uid://dgq8aqvhj6bte" path="res://Scenes/Interactables/crate.tscn" id="8_vveao"]
 [ext_resource type="PackedScene" uid="uid://c7v4fggfefk5m" path="res://Scenes/Objects/Spikes.tscn" id="9_48xad"]
@@ -17,6 +17,22 @@
 [ext_resource type="PackedScene" uid="uid://ubm3g25m2mvs" path="res://Scenes/UI/level_ui.tscn" id="9_ksn3r"]
 [ext_resource type="PackedScene" uid="uid://ccwmruij0t5rt" path="res://Scenes/Objects/PalmeraIzquierda.tscn" id="10_2imga"]
 [ext_resource type="Texture2D" uid="uid://boa3ck5th0v5w" path="res://Scenes/Levels/Terrain (32x32).png" id="10_py55v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_veevh"]
+size = Vector2(97, 32)
+
+[sub_resource type="PackedScene" id="PackedScene_5cagn"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"names": PackedStringArray("Plarform", "Node2D", "CollisionShape2D", "position", "shape", "one_way_collision", "Sprite2D", "scale", "texture", "region_enabled", "region_rect"),
+"node_count": 3,
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 0, 0, 0, 0, 2, 2, -1, 3, 3, 0, 4, 1, 5, 2, 0, 0, 0, 6, 6, -1, 5, 3, 0, 7, 3, 8, 4, 9, 2, 10, 5, 0),
+"variants": [Vector2(0.5, 2), SubResource("RectangleShape2D_veevh"), true, Vector2(1.00919, 1), ExtResource("5_y6e5y"), Rect2(0, 127.032, 96.489, 32.9681)],
+"version": 3
+}
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_muqlf"]
 resource_name = "Tiles"
@@ -31,7 +47,7 @@ scenes/8/scene = ExtResource("9_48xad")
 scenes/9/scene = ExtResource("10_2imga")
 scenes/10/scene = ExtResource("3_repav")
 scenes/11/scene = ExtResource("4_scytg")
-scenes/12/scene = ExtResource("5_6ry62")
+scenes/12/scene = SubResource("PackedScene_5cagn")
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_3eqbe"]
 resource_name = "Enemies"
