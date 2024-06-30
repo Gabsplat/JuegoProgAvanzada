@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://vsxauni78yw6"]
+[gd_scene load_steps=25 format=3 uid="uid://vsxauni78yw6"]
 
 [ext_resource type="Script" path="res://Scenes/Virtual/BaseLevel.gd" id="1_gi0ax"]
 [ext_resource type="PackedScene" uid="uid://dk6a56e3n3mbc" path="res://Scenes/Player/player.tscn" id="2_2wr2r"]
@@ -8,8 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://de5utrueqtaqj" path="res://Scenes/Interactables/checkpoint.tscn" id="5_t4l8f"]
 [ext_resource type="Texture2D" uid="uid://dyoxu3u7x8xbk" path="res://Assets/Tiles/island_tile_sheet.png" id="5_y6e5y"]
 [ext_resource type="PackedScene" uid="uid://b6n2e6kkf0hqu" path="res://Scenes/Enemies/crawler_enemy.tscn" id="6_3c4nd"]
+[ext_resource type="PackedScene" uid="uid://b1bgsf2xm6mv4" path="res://Scenes/Objects/Spike.tscn" id="6_msmj1"]
 [ext_resource type="PackedScene" uid="uid://c1bq0xi4a0k6s" path="res://Scenes/Interactables/collectable.tscn" id="6_nawf6"]
-[ext_resource type="PackedScene" uid="uid://bpf3ilhbh57wg" path="res://Scenes/Interactables/death_zone.tscn" id="7_0fme4"]
+[ext_resource type="PackedScene" uid="uid://bsa8sgay28e88" path="res://Scenes/Interactables/death_zone.tscn" id="7_0fme4"]
 [ext_resource type="PackedScene" uid="uid://cih0knhrxl1pe" path="res://Scenes/Virtual/prompted_interactable.tscn" id="8_jfjs7"]
 [ext_resource type="PackedScene" uid="uid://dgq8aqvhj6bte" path="res://Scenes/Interactables/crate.tscn" id="8_vveao"]
 [ext_resource type="PackedScene" uid="uid://c7v4fggfefk5m" path="res://Scenes/Objects/Spikes.tscn" id="9_48xad"]
@@ -48,6 +49,7 @@ scenes/9/scene = ExtResource("10_2imga")
 scenes/10/scene = ExtResource("3_repav")
 scenes/11/scene = ExtResource("4_scytg")
 scenes/12/scene = SubResource("PackedScene_5cagn")
+scenes/13/scene = ExtResource("6_msmj1")
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_3eqbe"]
 resource_name = "Enemies"
