@@ -27,7 +27,6 @@ var coyote_frames = 30 # How many in-air frames to allow jumping
 var coyote = false  # Track whether we're in coyote time or not
 
 
-
 signal player_lost_health(new_health)
 signal player_lost_all_health
 

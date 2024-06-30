@@ -69,7 +69,6 @@ func _on_hitbox_body_entered(body):
 		hit_body.emit(body)
 	pass # Replace with function body.
 
-#These functions are used when one actor "hits" another actor
 
 func take_hit(_hitter):
 	queue_free()

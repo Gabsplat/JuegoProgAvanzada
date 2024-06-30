@@ -14,7 +14,7 @@ var collected := false:
 			hide()
 			process_mode = Node.PROCESS_MODE_DISABLED
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
 	pass # Replace with function body.
 
@@ -22,6 +22,7 @@ func collect():
 	anim_player.play("Collected")
 	await anim_player.animation_finished
 	collected = true
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
+
 func _process(_delta):
 	pass

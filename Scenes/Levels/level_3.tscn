@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://c2rc6cw1y1p2b" path="res://Assets/Tiles/items_spritesheet.png" id="2_rv8sd"]
 [ext_resource type="PackedScene" uid="uid://b6n2e6kkf0hqu" path="res://Scenes/Enemies/crawler_enemy.tscn" id="5_x1gcv"]
 [ext_resource type="PackedScene" uid="uid://bhgdgjy2jxwjs" path="res://Scenes/Enemies/flyer_enemy.tscn" id="6_irrih"]
-[ext_resource type="PackedScene" uid="uid://b1y7osgsjsr41" path="res://Scenes/Enemies/killzone2.tscn" id="6_wvtu1"]
+[ext_resource type="PackedScene" path="res://Scenes/Enemies/killzone2.tscn" id="6_wvtu1"]
 [ext_resource type="PackedScene" uid="uid://boic0ihw3y8wu" path="res://Scenes/Interactables/exit.tscn" id="7_jhb5q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ucary"]

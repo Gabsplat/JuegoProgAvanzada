@@ -25,7 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://cjghijuu1of3n" path="res://Assets/Player/p_run/Run Sword 06.png" id="23_wwjj4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jbkd8"]
-size = Vector2(18, 27)
+size = Vector2(18, 26)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dkb7f"]
 animations = [{
@@ -153,7 +153,7 @@ speed = 220.0
 jump_height = 140
 
 [node name="CollisionShape2D" parent="." index="0"]
-position = Vector2(0, -2.5)
+position = Vector2(0, -2)
 shape = SubResource("RectangleShape2D_jbkd8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="1"]

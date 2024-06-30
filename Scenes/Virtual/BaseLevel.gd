@@ -38,6 +38,7 @@ func after_ready():
 	starting_pos = player.position
 
 func on_player_touched(node:Interactable):
+	print("ASSDASDASD")
 	if node is Exit:
 		exit_level()
 	elif node is Checkpoint:
@@ -46,10 +47,10 @@ func on_player_touched(node:Interactable):
 		node.collect()
 		update_score(100)
 	elif node is DeathZone:
+		print("Que ashe papau")
 		kill_player()
 
-#Methods called by interactables/enemies
-
+#Methods called by interactables/enedmies
 func update_score(value):
 	levelscore += value
 	ui.update_score(levelscore)
@@ -87,7 +88,6 @@ func respawn():
 
 func _on_tile_map_child_entered_tree(node):
 	# Handle the noeds that are instanced by the tile map.
-	# Potential change - Have them added to the test level instead?
 	
 	if node.is_in_group("interactable"):
 		node.player_touched.connect(on_player_touched.bind(node))
@@ -100,8 +100,9 @@ func _on_tile_map_child_entered_tree(node):
 		node.hit_body.connect(_on_hit_body.bind(node))
 
 func death():
-	respawn()
 	ui.full_health()
+	respawn.call_deferred()
+	
 
 func _on_hit_body(hitbody:Actor, hitter:Actor):
 	hitbody.take_hit(hitter) 

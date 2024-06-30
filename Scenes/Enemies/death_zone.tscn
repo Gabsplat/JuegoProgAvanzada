@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1hx1gfelygx"]
+[gd_scene load_steps=3 format=3 uid="uid://dy83800r8drdp"]
 
 [ext_resource type="PackedScene" uid="uid://u2fh1xedqj88" path="res://Scenes/Virtual/interactable.tscn" id="1_6qca7"]
 [ext_resource type="Script" path="res://Scenes/Interactables/death_zone.gd" id="2_hjtgu"]
 
-[node name="DeathZone" instance=ExtResource("1_6qca7")]
+[node name="Spike" instance=ExtResource("1_6qca7")]
 script = ExtResource("2_hjtgu")
 
 [node name="CollisionShape2D" parent="." index="0"]
