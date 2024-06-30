@@ -1,0 +1,54 @@
+[gd_scene load_steps=11 format=3 uid="uid://bnbdn1sbbu0iq"]
+
+[ext_resource type="Texture2D" uid="uid://dt8f0linwc1tu" path="res://Assets/Objects/Flag/Flag 01.png" id="1_73ycw"]
+[ext_resource type="Texture2D" uid="uid://dtl0gegv2bh6j" path="res://Assets/Objects/Flag/Flag 02.png" id="2_6hk24"]
+[ext_resource type="Texture2D" uid="uid://b8h2akki7t8i6" path="res://Assets/Objects/Flag/Flag 03.png" id="3_4qq8l"]
+[ext_resource type="Texture2D" uid="uid://cy478e2hr43tc" path="res://Assets/Objects/Flag/Flag 04.png" id="4_rvh81"]
+[ext_resource type="Texture2D" uid="uid://csx7reewdypn2" path="res://Assets/Objects/Flag/Flag 05.png" id="5_m1kcx"]
+[ext_resource type="Texture2D" uid="uid://dcpnq5ur42fl2" path="res://Assets/Objects/Flag/Flag 06.png" id="6_8q82k"]
+[ext_resource type="Texture2D" uid="uid://7kcl1q8heyk2" path="res://Assets/Objects/Flag/Flag 07.png" id="7_bkaqj"]
+[ext_resource type="Texture2D" uid="uid://cwl7g5d1gdopj" path="res://Assets/Objects/Flag/Flag 08.png" id="8_1j2mg"]
+[ext_resource type="Texture2D" uid="uid://tqb6su3eopje" path="res://Assets/Objects/Flag/Flag 09.png" id="9_r2kp0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wegg4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_73ycw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6hk24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4qq8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rvh81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_m1kcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8q82k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_bkaqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1j2mg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_r2kp0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Flag" type="Node2D"]
+
+[node name="Flag" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wegg4")
+autoplay = "default"
+frame = 6
+frame_progress = 0.758834
