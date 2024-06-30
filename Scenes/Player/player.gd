@@ -106,13 +106,13 @@ func take_hit(hitter):
 	anim.play("hurt")
 	isGettingHurt = true
 	health -= 1
-	player_lost_health.emit(health)
 	if health <= 0:
-		health = 3
 		player_lost_all_health.emit()
+		#health = 3
+	else:
+		player_lost_health.emit(health)
 
 func set_up_camera_limit(rect:Rect2i):
-	print(rect)
 	rect = rect.abs()
 	camera.limit_left = rect.position.x 
 	camera.limit_top = rect.position.y
@@ -125,7 +125,6 @@ func _on_coyote_timer_timeout():
 
 func react_to_hitting(_hitbody):
 	# Have the player jump
-	print("auch")
 	anim.play("hurt")
 	isGettingHurt = true
 	velocity.y = jump_vel
@@ -135,7 +134,6 @@ func react_to_hitting(_hitbody):
 
 
 func _on_animated_sprite_2d_animation_finished():
-	print("anim finished: " + anim.animation)
 	if anim.animation == "attack":
 		$Attack/CollisionShape2D.disabled = true
 		isAttacking = false

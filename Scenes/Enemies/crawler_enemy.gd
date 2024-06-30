@@ -37,19 +37,12 @@ func flip():
 
 
 func _on_hit_body(body):
-	print(body)
 	pass # Replace with function body.
 
 
 func _on_hitbox_area_entered(area):
 	if area.is_in_group("sword"):
-		health -= 1
-		var animsList = $AnimationPlayer.get_queue()
-		for item in animsList:
-			print("Item: " + item)
-			
-		#anim.play("hit")
-		#$AnimationPlayer.play("FlipLeft")
+		health -= 1	
 		if(health == 0):
 			$".".queue_free()
 	pass # Replace with function body.

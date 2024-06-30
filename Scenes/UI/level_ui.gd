@@ -6,7 +6,7 @@ extends CanvasLayer
 @onready var heartBar = $HeartBar
 
 @onready var hearts = healthContainer.get_children()
-
+ 
 @onready var current_heart_index = len(hearts) - 1
 @onready var deathBar = preload("res://Assets/UI/LevelUI/Life Bars/Big Bars/2.png")
 @onready var full_heart_tex = preload("res://Assets/UI/LevelUI/Life Bars/Colors/1.png")
@@ -15,9 +15,10 @@ func _ready():
 	pass # Replace with function body.
 
 func full_health():
+	print("ola")
 	current_heart_index = len(hearts) - 1
 	for i in range(len(hearts)):
-		hearts[i].texture = full_heart_tex
+		hearts[i].modulate = Color(1, 1, 1, 1)
 
 func gain_health():
 	if current_heart_index < len(hearts) - 1:

@@ -38,7 +38,6 @@ func after_ready():
 	starting_pos = player.position
 
 func on_player_touched(node:Interactable):
-	print("ASSDASDASD")
 	if node is Exit:
 		exit_level()
 	elif node is Checkpoint:
@@ -47,7 +46,6 @@ func on_player_touched(node:Interactable):
 		node.collect()
 		update_score(100)
 	elif node is DeathZone:
-		print("Que ashe papau")
 		kill_player()
 
 #Methods called by interactables/enedmies
@@ -87,8 +85,6 @@ func respawn():
 	
 
 func _on_tile_map_child_entered_tree(node):
-	# Handle the noeds that are instanced by the tile map.
-	
 	if node.is_in_group("interactable"):
 		node.player_touched.connect(on_player_touched.bind(node))
 	if node.is_in_group("player"):
@@ -100,9 +96,8 @@ func _on_tile_map_child_entered_tree(node):
 		node.hit_body.connect(_on_hit_body.bind(node))
 
 func death():
-	ui.full_health()
 	respawn.call_deferred()
-	
+	ui.full_health()
 
 func _on_hit_body(hitbody:Actor, hitter:Actor):
 	hitbody.take_hit(hitter) 
