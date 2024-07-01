@@ -51,3 +51,6 @@ Gabriel Carrillo
 
 Agustin Cola"
 horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(577, 325)
