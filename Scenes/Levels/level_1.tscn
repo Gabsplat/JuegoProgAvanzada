@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c7s8h8anft4o"]
+[gd_scene load_steps=17 format=3 uid="uid://c7s8h8anft4o"]
 
 [ext_resource type="PackedScene" uid="uid://vsxauni78yw6" path="res://Scenes/Virtual/BaseLevel.tscn" id="1_lwumw"]
 [ext_resource type="PackedScene" uid="uid://dmij6dvb88pgy" path="res://Scenes/Background.tscn" id="2_o7vrn"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b13ajmrupd2tv" path="res://Assets/Player/p_jump/Jump Sword 02.png" id="10_6uk2p"]
 [ext_resource type="Texture2D" uid="uid://dxn3r18igdhnn" path="res://Assets/Player/p_jump/Jump Sword 03.png" id="11_7uicw"]
 [ext_resource type="Texture2D" uid="uid://4w38nq82xi77" path="res://Assets/Player/p_fall.png" id="12_qmfld"]
+[ext_resource type="AudioStream" uid="uid://d0tujtm6pasfb" path="res://Assets/Music/Un Mundo de Aventuras.mp3" id="13_5uou8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g6c2o"]
 animations = [{
@@ -166,17 +167,7 @@ para saltar más alto"
 fit_content = true
 scroll_active = false
 
-[connection signal="body_entered" from="TileMap/Checkpoint" to="TileMap/Checkpoint" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/DeathZone" to="TileMap/DeathZone" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@22435" to="TileMap/@Area2D@22435" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@22436" to="TileMap/@Area2D@22436" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/Collectable" to="TileMap/Collectable" method="_on_body_entered"]
-[connection signal="hit_body" from="TileMap/CrawlerEnemy" to="TileMap/CrawlerEnemy" method="_on_hit_body"]
-[connection signal="body_entered" from="TileMap/@Area2D@22437" to="TileMap/@Area2D@22437" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/Exit" to="TileMap/Exit" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@22441" to="TileMap/@Area2D@22441" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@23344" to="TileMap/@Area2D@23344" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@23345" to="TileMap/@Area2D@23345" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@23346" to="TileMap/@Area2D@23346" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@23347" to="TileMap/@Area2D@23347" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMap/@Area2D@23348" to="TileMap/@Area2D@23348" method="_on_body_entered"]
+[node name="MusicaNivel" type="AudioStreamPlayer2D" parent="." index="8"]
+stream = ExtResource("13_5uou8")
+autoplay = true
+max_distance = 350000.0
