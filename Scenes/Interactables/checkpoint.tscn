@@ -1,16 +1,23 @@
-[gd_scene load_steps=15 format=3 uid="uid://de5utrueqtaqj"]
+[gd_scene load_steps=22 format=3 uid="uid://de5utrueqtaqj"]
 
 [ext_resource type="PackedScene" uid="uid://u2fh1xedqj88" path="res://Scenes/Virtual/interactable.tscn" id="1_bpglg"]
 [ext_resource type="Script" path="res://Scenes/Interactables/checkpoint.gd" id="2_sqdvw"]
-[ext_resource type="Texture2D" uid="uid://pkc4qrjt1fay" path="res://Assets/Tiles/flagRed2.png" id="3_nrtl8"]
-[ext_resource type="Texture2D" uid="uid://b8ut8ctxwpa6b" path="res://Assets/Tiles/flagRed.png" id="4_xsnvk"]
+[ext_resource type="Texture2D" uid="uid://bodd86wpe8w0q" path="res://Assets/Objects/Flag/Flag 01_completed.png" id="3_2mch7"]
+[ext_resource type="Texture2D" uid="uid://b7x6ytwrmnyi5" path="res://Assets/Objects/Flag/Flag 02_completed.png" id="4_cxs72"]
+[ext_resource type="Texture2D" uid="uid://e588okp0mnv7" path="res://Assets/Objects/Flag/Flag 03_completed.png" id="5_ssses"]
 [ext_resource type="Texture2D" uid="uid://dt8f0linwc1tu" path="res://Assets/Objects/Flag/Flag 01.png" id="5_t6580"]
 [ext_resource type="Texture2D" uid="uid://dtl0gegv2bh6j" path="res://Assets/Objects/Flag/Flag 02.png" id="6_7dwbx"]
+[ext_resource type="Texture2D" uid="uid://cqxk6q46k0wcu" path="res://Assets/Objects/Flag/Flag 04_completed.png" id="6_af116"]
+[ext_resource type="Texture2D" uid="uid://b8rpltc0ovn08" path="res://Assets/Objects/Flag/Flag 05_completed.png" id="7_j0pgl"]
 [ext_resource type="Texture2D" uid="uid://b8h2akki7t8i6" path="res://Assets/Objects/Flag/Flag 03.png" id="7_xu4x1"]
+[ext_resource type="Texture2D" uid="uid://dhu1fbxrrldxh" path="res://Assets/Objects/Flag/Flag 06_completed.png" id="8_gifod"]
 [ext_resource type="Texture2D" uid="uid://cy478e2hr43tc" path="res://Assets/Objects/Flag/Flag 04.png" id="8_mh1q0"]
 [ext_resource type="Texture2D" uid="uid://csx7reewdypn2" path="res://Assets/Objects/Flag/Flag 05.png" id="9_8k3pl"]
+[ext_resource type="Texture2D" uid="uid://clwjdwtwtw0xp" path="res://Assets/Objects/Flag/Flag 07_completed.png" id="9_h4bx6"]
+[ext_resource type="Texture2D" uid="uid://cybs2wgg4lyfh" path="res://Assets/Objects/Flag/Flag 08_completed.png" id="10_6q1o5"]
 [ext_resource type="Texture2D" uid="uid://dcpnq5ur42fl2" path="res://Assets/Objects/Flag/Flag 06.png" id="10_pfhkw"]
 [ext_resource type="Texture2D" uid="uid://7kcl1q8heyk2" path="res://Assets/Objects/Flag/Flag 07.png" id="11_hv3vt"]
+[ext_resource type="Texture2D" uid="uid://dkux5hwc8mgsy" path="res://Assets/Objects/Flag/Flag 09_completed.png" id="11_i1wvw"]
 [ext_resource type="Texture2D" uid="uid://cwl7g5d1gdopj" path="res://Assets/Objects/Flag/Flag 08.png" id="12_7k3kl"]
 [ext_resource type="Texture2D" uid="uid://tqb6su3eopje" path="res://Assets/Objects/Flag/Flag 09.png" id="13_nfb12"]
 
@@ -18,14 +25,35 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_nrtl8")
+"texture": ExtResource("3_2mch7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_xsnvk")
+"texture": ExtResource("4_cxs72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ssses")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_af116")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_j0pgl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gifod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_h4bx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6q1o5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_i1wvw")
 }],
 "loop": true,
 "name": &"active",
-"speed": 4.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -66,5 +94,5 @@ script = ExtResource("2_sqdvw")
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." index="1"]
 position = Vector2(0, 3)
 sprite_frames = SubResource("SpriteFrames_w2j4f")
-animation = &"inactive"
+animation = &"active"
 autoplay = "inactive"
